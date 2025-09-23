@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+.dark-gradient{
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF) ,
+radial-gradient(80.46% 104.31% at 50% 0%, #132436 0%, #070B0F 84.83%) ;
+
+}
