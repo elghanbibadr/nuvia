@@ -5,9 +5,12 @@ import DynamicPriceMonitoring from './componenets/DynamicPriceMonitoring'
 
 const page = () => {
   return (
-    <>
-      <DynamicPriceMonitoring/>
-    </>
+    <div className='bg-[#18232D]'>
+
+
+
+
+    </div>
   )
 }
 
