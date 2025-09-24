@@ -1,11 +1,11 @@
 import React from 'react'
-import RecommandationCard from './componenets/RecommandationCard'
+import ConversationalTipCard from './componenets/ConversationalTipCard'
 
 
 const page = () => {
   return (
     <>
-      <RecommandationCard/>
+      <ConversationalTipCard/>
     </>
   )
 }
