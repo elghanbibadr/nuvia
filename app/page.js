@@ -1,12 +1,11 @@
 import React from 'react'
-import ProblemsAndSolutions from './componenets/ProblemsAndSolutions'
-import ParallaxHero from './componenets/Hero'
+import RecommandationCard from './componenets/RecommandationCard'
+
 
 const page = () => {
   return (
     <>
-    <ParallaxHero />
-      <ProblemsAndSolutions />
+      <RecommandationCard/>
     </>
   )
 }
