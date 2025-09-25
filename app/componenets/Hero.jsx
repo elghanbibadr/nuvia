@@ -2,7 +2,6 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
-import sky from "@/public/sky.png"
 import rockWithMan from "@/public/rock.png"
 import HeaderNavigation from './HeaderNavigation';
 
@@ -25,22 +24,11 @@ const Hero = () => {
   
   return (
     <div className="relative">
-      {/* Fixed viewport for the parallax sequence */}
+      {/* Fixed viewport for the parallax sequence with sky background */}
       <div 
         ref={containerRef}
-        className="sticky top-0 h-screen w-full overflow-hidden"
+        className="sticky top-0 h-screen w-full overflow-hidden bg-[url('/sky.png')] bg-cover bg-center bg-no-repeat"
       >
-        {/* Sky background */}
-        <div className="absolute inset-0 w-full h-full z-10">
-          <Image 
-            src={sky} 
-            alt="Sky with mountains" 
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
-
         {/* Header Navigation */}
         <div className="absolute top-4 left-0 right-0 z-50">
           <HeaderNavigation />
@@ -48,12 +36,12 @@ const Hero = () => {
 
         {/* NÜVIA Logo - with scaling animation */}
         <motion.div 
-          className="absolute inset-0 bottom-20 flex items-center justify-center z-20"
+          className="absolute bottom-20 inset-0 flex items-center justify-center z-20"
           style={{ scale: titleScale }}
         >
-          <div className="w-[400px] max-w-[90vw]">
+          <div className="w-[440px] max-w-[90vw]">
             <svg 
-              className="w-full h-auto mix-blend-overlay" 
+              className="w-full h-auto mix-blend-overlay opacity-80" 
               viewBox="0 0 561 168" 
               fill="none" 
               xmlns="http://www.w3.org/2000/svg"
@@ -88,24 +76,24 @@ const Hero = () => {
         {/* Text and Button overlay */}
         <motion.div
           style={{ opacity: textOpacity }}
-          className="absolute inset-0 z-40 top-10 flex flex-col justify-end items-center pb-16"
+          className="absolute top-72 inset-0 z-40 flex flex-col justify-center items-center text-center px-4"
         >
-          <div className="text-center px-4">
+          <div className="">
             <h2 
-              className="text-2xl  md:text-3xl text-white font-semibold mb-4 font-raleway" 
+              className="text-white  text-xl font-bold leading-normal mb-2" 
               style={{ textShadow: '2px 2px 20px rgba(0,0,0,0.8)' }}
             >
               Future of Travel
             </h2>
             <p 
-              className="text-white !font-raleway  mb-10 text-center font-raleway text-base font-normal leading-normal"
+              className="text-white  text-base font-normal leading-relaxed max-w-2xl mx-auto mb-8"
               style={{ textShadow: '1px 1px 15px rgba(0,0,0,0.8)' }}
             >
               Experience the future of personalized, seamless travel.<br />
               Nüvia's AI assembles your perfect journey and lets you<br />
               book everything with one click
             </p>
-            <button className="px-8 py-3  bg-white text-gray-900 rounded-full font-medium text-lg hover:bg-gray-100 transition-colors shadow-lg font-raleway">
+            <button className="px-8 py-3 bg-white text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg ">
               Join Waitlist Now
             </button>
           </div>
@@ -115,10 +103,7 @@ const Hero = () => {
       {/* Scroll height for parallax effect */}
       <div className="h-[200vh]"></div>
       
-      {/* Content continues after parallax */}
-      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
-        <h2 className="text-4xl text-white font-raleway">Continue scrolling normally</h2>
-      </div>
+  
     </div>
   );
 };

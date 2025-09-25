@@ -7,6 +7,7 @@ import Footer from './componenets/Footer'
 import HeaderNavigation from './componenets/HeaderNavigation'
 import { NoviaHero } from './componenets/NaviaHero'
 import Hero from './componenets/Hero'
+import ProblemsAndSolutions from './componenets/ProblemsAndSolutions'
 
 
 const page = () => {
@@ -14,6 +15,7 @@ const page = () => {
   <>
    {/* <HeaderNavigation/> */}
    <Hero/>
+   <ProblemsAndSolutions/>
   </>
   )
 }
