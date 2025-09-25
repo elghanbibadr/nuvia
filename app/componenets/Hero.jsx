@@ -39,7 +39,7 @@ const Hero = () => {
           className="absolute bottom-20 inset-0 flex items-center justify-center z-20"
           style={{ scale: titleScale }}
         >
-          <div className="w-[440px] max-w-[90vw]">
+          <div className=" w-[240px] md:w-[440px] max-w-[90vw]">
             <svg 
               className="w-full h-auto mix-blend-overlay opacity-80" 
               viewBox="0 0 561 168" 
@@ -86,11 +86,11 @@ const Hero = () => {
               Future of Travel
             </h2>
             <p 
-              className="text-white  text-base font-normal leading-relaxed max-w-2xl mx-auto mb-8"
+              className="text-white  text-sm  md:text-base font-normal leading-relaxed  md:max-w-2xl mx-auto mb-8"
               style={{ textShadow: '1px 1px 15px rgba(0,0,0,0.8)' }}
             >
-              Experience the future of personalized, seamless travel.<br />
-              Nüvia's AI assembles your perfect journey and lets you<br />
+              Experience the future of personalized, seamless travel.
+              Nüvia's AI assembles your perfect journey and lets you
               book everything with one click
             </p>
             <button className="px-8 py-3 bg-white text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg ">
