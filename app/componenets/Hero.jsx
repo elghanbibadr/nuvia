@@ -4,8 +4,9 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Image from 'next/image';
 import sky from "@/public/sky.png"
 import rockWithMan from "@/public/rock.png"
+import HeaderNavigation from './HeaderNavigation';
 
-const ParallaxHero = () => {
+const Hero = () => {
   const containerRef = useRef(null);
   const { scrollY } = useScroll({
     target: containerRef,
@@ -29,7 +30,7 @@ const ParallaxHero = () => {
         ref={containerRef}
         className="sticky top-0 h-screen w-full overflow-hidden"
       >
-        {/* Sky background - always visible */}
+        {/* Sky background */}
         <div className="absolute inset-0 w-full h-full z-10">
           <Image 
             src={sky} 
@@ -40,14 +41,24 @@ const ParallaxHero = () => {
           />
         </div>
 
-        {/* NUVIA SVG Logo - zooms out as you scroll, BEHIND the rock */}
+        {/* Header Navigation */}
+        <div className="absolute top-4 left-0 right-0 z-50">
+          <HeaderNavigation />
+        </div>
+
+        {/* NÜVIA Logo - with scaling animation */}
         <motion.div 
-          className="absolute inset-0 flex items-center justify-center z-20"
+          className="absolute inset-0 bottom-20 flex items-center justify-center z-20"
           style={{ scale: titleScale }}
         >
-          <div className="text-center">
-            <svg width="240" height="72" viewBox="0 0 561 168" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-2">
-              <g style={{mixBlendMode: 'overlay'}}>
+          <div className="w-[400px] max-w-[90vw]">
+            <svg 
+              className="w-full h-auto mix-blend-overlay" 
+              viewBox="0 0 561 168" 
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g>
                 <path d="M433.504 165.22L474.244 40.4058H520.26L561 165.22H522.423L515.935 140.396H478.569L472.082 165.22H433.504ZM496.906 70.1606L485.316 114.533H509.189L497.598 70.1606H496.906Z" fill="white"/>
                 <path d="M385.585 165.22V40.4058H422.26V165.22H385.585Z" fill="white"/>
                 <path d="M288.536 165.22L250.996 40.4058H292.515L312.322 130.449H313.014L332.822 40.4058H374.34L336.801 165.22H288.536Z" fill="white"/>
@@ -55,11 +66,10 @@ const ParallaxHero = () => {
                 <path d="M0.502686 165.22V40.4058H31.0359L75.1492 104.24H75.7546V40.4058H112.429V165.22H82.2419L37.7827 100.348H37.1772V165.22H0.502686Z" fill="white"/>
               </g>
             </svg>
-            
           </div>
         </motion.div>
 
-        {/* Rock with man - slides up from bottom, OVER the title */}
+        {/* Rock with man - slides up from bottom */}
         <motion.div
           style={{ 
             opacity: rockOpacity,
@@ -75,35 +85,42 @@ const ParallaxHero = () => {
           />
         </motion.div>
 
-        {/* Button appears with text - compact layout */}
+        {/* Text and Button overlay */}
         <motion.div
           style={{ opacity: textOpacity }}
-          className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-40"
+          className="absolute inset-0 z-40 top-10 flex flex-col justify-end items-center pb-16"
         >
-            <p className="text-lg md:text-xl text-white font-medium mb-4" style={{ textShadow: '2px 2px 20px rgba(0,0,0,0.8)' }}>
+          <div className="text-center px-4">
+            <h2 
+              className="text-2xl  md:text-3xl text-white font-semibold mb-4 font-raleway" 
+              style={{ textShadow: '2px 2px 20px rgba(0,0,0,0.8)' }}
+            >
               Future of Travel
-            </p>
-            <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-2xl mx-auto px-4"
-               style={{ textShadow: '1px 1px 15px rgba(0,0,0,0.8)' }}>
+            </h2>
+            <p 
+              className="text-white !font-raleway  mb-10 text-center font-raleway text-base font-normal leading-normal"
+              style={{ textShadow: '1px 1px 15px rgba(0,0,0,0.8)' }}
+            >
               Experience the future of personalized, seamless travel.<br />
-              Nuvia's AI assembles your perfect journey and lets you<br />
+              Nüvia's AI assembles your perfect journey and lets you<br />
               book everything with one click
             </p>
-          <button className="px-8 py-3 bg-white/90 text-gray-900 rounded-full font-medium text-lg hover:bg-white transition-colors shadow-lg backdrop-blur-sm">
-            Join Waitlist Now
-          </button>
+            <button className="px-8 py-3  bg-white text-gray-900 rounded-full font-medium text-lg hover:bg-gray-100 transition-colors shadow-lg font-raleway">
+              Join Waitlist Now
+            </button>
+          </div>
         </motion.div>
       </div>
       
-      {/* This creates the scroll height for the parallax effect */}
+      {/* Scroll height for parallax effect */}
       <div className="h-[200vh]"></div>
       
-      {/* Normal content continues after the parallax sequence */}
-      <div className="h-screen bg-gray-900 flex items-center justify-center">
-        <h2 className="text-4xl text-white">Continue scrolling normally</h2>
+      {/* Content continues after parallax */}
+      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+        <h2 className="text-4xl text-white font-raleway">Continue scrolling normally</h2>
       </div>
     </div>
   );
 };
 
-export default ParallaxHero;
+export default Hero;

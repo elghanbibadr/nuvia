@@ -5,9 +5,8 @@ import "./globals.css";
 const raleway = Raleway({
   variable: "--font-raleway-sans",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"], // All weights you'll need
 });
-
-
 
 export const metadata = {
   title: "Create Next App",
