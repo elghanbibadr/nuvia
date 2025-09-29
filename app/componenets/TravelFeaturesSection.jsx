@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from './Card';
 
 const features = [
   {
@@ -47,14 +48,14 @@ const features = [
 
 const TravelFeaturesSection = () => {
   return (
-    <div className='bg-[#18232D] p-8'>
+    <div className=' p-4'>
       
       {/* Header Section */}
       <div className="text-center mb-16">
-        <h1 className="heading-large mb-4">
+        <h2 className=" mb-4">
           More Time Exploring, Less Time Planning. Travel Without Complexity.
-        </h1>
-        <p className="subheading-text">
+        </h2>
+        <p className=" subheading-paragprah text-[#FFFFFFCC] md:w-[70%] text-center mx-auto">
           Nüvia removes travel planning stress, letting you focus on enjoying your journey
         </p>
       </div>
@@ -62,16 +63,16 @@ const TravelFeaturesSection = () => {
       {/* Features Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {features.map((feature) => (
-          <div 
+          <Card 
             key={feature.id}
-            className="flex bg-[#19262F] rounded-3xl pt-16 px-6 pb-6 flex-col items-center gap-4 flex-1 self-stretch"
+            className="rounded-[32px] bg-[#18232D]  flex flex-col"
           >
-            <span className="text-4xl">{feature.icon}</span>
+            <span className="text-2xl mx-auto">{feature.icon}</span>
             
         
-            <h3 className='heading-large text-center'>{feature.title}</h3>
-            <p className='subheading-text text-center'>{feature.description}</p>
-          </div>
+            <h4 className='text-white !font-raleway text-lg font-semibold mb-3 flex-shrink-0'>{feature.title}</h4>
+            <p className='text-white/70 !font-raleway text-sm leading-relaxed flex-1'>{feature.description}</p>
+          </Card>
         ))}
       </div>
     </div>
