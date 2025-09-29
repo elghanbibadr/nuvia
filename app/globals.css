@@ -106,3 +106,10 @@ background: radial-gradient(131.56% 202.93% at 198.29% 112.45%, #244265 0%, #172
     background-repeat: no-repeat;
     z-index: 88888 !important;
   }
+
+
+
+  .blended{
+    background-image: url("../public/logoSmall.svg");
+    background-repeat: no-repeat;
+  }

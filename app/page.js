@@ -5,6 +5,8 @@ import ProblemsAndSolutions from './componenets/ProblemsAndSolutions'
 import EffortlessTravel from './componenets/EffortlessTravel'
 import TravelFeaturesSection from './componenets/TravelFeaturesSection'
 import Roadmap from './componenets/Roadmap'
+import WaitlistSection from './componenets/WaitlistSection'
+import Footer from './componenets/Footer'
 
 
 const page = () => {
@@ -16,6 +18,8 @@ const page = () => {
    <EffortlessTravel/>
    <TravelFeaturesSection/>
    <Roadmap/>
+   <WaitlistSection/>
+   <Footer/>
   </>
   )
 }
