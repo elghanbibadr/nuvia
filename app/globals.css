@@ -28,13 +28,42 @@ body {
 }
 
 
+/* TYPOGRAPHY */
+/* 
+@layer components{
+  h2{
+      @apply text-white text-center !font-raleway text-2xl md:text-4xl font-bold leading-normal;
+  }
+} */
+
+@layer components{
+
+  .subheading-paragprah{
+    @apply text-white  text-sm  md:text-base font-normal leading-relaxed ;
+  }
+    h2{
+      @apply text-white text-center  text-2xl md:text-4xl font-bold leading-normal;
+  }
+  h3{
+      @apply text-white text-center mb-4 text-xl  font-bold leading-normal;
+
+  }
+  p{
+     @apply text-white/70 text-center  text-[15px] font-normal leading-normal;
+  }
+}
 
 .dark-gradient{
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF) ,
 radial-gradient(80.46% 104.31% at 50% 0%, #132436 0%, #070B0F 84.83%) ;
 
 }
-
+.one-tap-buy-gradient {
+  background: linear-gradient(180deg, #0076FF 0%, #04408B 80%);
+}
+.green-gradient {
+  background: linear-gradient(180deg, #B2FF4C 0%, #0F6612 80%);
+}
 
 .dark-gradient2{
   border-radius: 32px;

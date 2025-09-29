@@ -86,7 +86,7 @@ const Hero = () => {
               Future of Travel
             </h2>
             <p 
-              className="text-white  text-sm  md:text-base font-normal leading-relaxed  md:max-w-2xl mx-auto mb-8"
+              className="subheading-paragprah md:max-w-2xl mx-auto mb-8"
               style={{ textShadow: '1px 1px 15px rgba(0,0,0,0.8)' }}
             >
               Experience the future of personalized, seamless travel.

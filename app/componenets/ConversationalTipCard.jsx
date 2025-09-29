@@ -4,7 +4,7 @@ import ConversationalTip from "@/public/ConversationalTip.svg"
 import Image from 'next/image'
 const ConversationalTipCard = () => {
   return (
-      <Card >
+      <Card  className="dark-gradient2" >
       <h4>Conversational Trip Planning</h4>
       <p className='text-white/70 text-center font-normal text-[15px] leading-normal'>
      Describe your dream trip, and our AI instantly builds the perfect itinerary
