@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Footer = () => {
@@ -13,9 +14,9 @@ const Footer = () => {
       { name: "Benefits", href: "#" }
     ],
     legal: [
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Cookie Settings", href: "#" }
+      { name: "Privacy Policy", href: "/privacy" },
+      { name: "Terms of Service", href: "/terms" },
+      { name: "Cookie Settings", href: "/cookies" }
     ]
   };
 
@@ -59,13 +60,13 @@ const Footer = () => {
             <h4 className="text-white/70 md:text-left font-normal mb-4 md:mb-6 text-lg">Quick Links</h4>
             <div className="space-y-3">
               {footerLinks.quickLinks.map((link, index) => (
-                <a 
+                <Link 
                   key={index}
                   href={link.href}
                   className="block text-white hover:text-white transition-colors duration-200 text-base"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -75,13 +76,13 @@ const Footer = () => {
             <h4 className="text-white/70 md:text-left font-normal mb-4 md:mb-6 text-lg">Legal</h4>
             <div className="space-y-3">
               {footerLinks.legal.map((link, index) => (
-                <a 
+                <Link 
                   key={index}
                   href={link.href}
                   className="block text-white hover:text-white transition-colors duration-200 text-base"
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
