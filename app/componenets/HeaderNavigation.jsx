@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useCallback } from 'react';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 const NAVIGATION_ITEMS = [
   { name: 'Home', href: '#home', isActive: false },
@@ -29,9 +30,11 @@ const NuviaLogo = ({ className = "" }) => (
 );
 
 const JoinButton = ({ className = "" }) => (
-  <button className={`bg-white text-black font-normal px-6 py-2 rounded-full text-sm hover:bg-gray-100 transition-colors duration-200 ${className}`}>
-    Join
-  </button>
+  <Link href="/waitlist">
+    <button className={`btn btn-light ${className}`}>
+      Join
+    </button>
+  </Link>
 );
 
 const NavigationLink = ({ item, onClick }) => (
@@ -61,7 +64,7 @@ const HeaderNavigation = () => {
       <header className="hidden md:block w-[60%] max-w-4xl mx-auto">
         <div className="bg-[#0E141C80] backdrop-blur-sm rounded-full px-6 py-3">
           <div className="flex items-center justify-between">
-            <NuviaLogo />
+            <NuviaLogo className='relative bottom-0.5' />
             
             <nav className="flex items-center space-x-8" role="navigation" aria-label="Main navigation">
               {NAVIGATION_ITEMS.map((item) => (
@@ -76,7 +79,7 @@ const HeaderNavigation = () => {
 
       {/* Mobile Header */}
       <header className="md:hidden w-[90%] max-w-sm mx-auto">
-        <div className="bg-[#0E141C80] backdrop-blur-sm rounded-full px-4 py-3">
+        <div className="bg-[#0E141C80] backdrop-blur-sm rounded-full pl-4 pr-2 py-2">
           <div className="flex items-center justify-between">
             <button
               onClick={toggleMobileMenu}
@@ -89,7 +92,7 @@ const HeaderNavigation = () => {
 
             <NuviaLogo className="flex-shrink-0" />
 
-            <JoinButton className="px-4 py-1.5 text-xs" />
+            <JoinButton className="px-4   " />
           </div>
         </div>
       </header>

@@ -12,7 +12,6 @@ import Footer from './componenets/Footer'
 const page = () => {
   return (
   <>
-   {/* <HeaderNavigation/> */}
    <Hero/>
    <ProblemsAndSolutions/>
    <EffortlessTravel/>

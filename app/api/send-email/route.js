@@ -17,7 +17,7 @@ export async function POST(request) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'onboarding@resend.dev', // Free tier: use this default sender
+      from: 'noreply@nuvia.me', // Free tier: use this default sender
       to: to,
       subject: subject,
       html: `

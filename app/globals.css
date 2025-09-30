@@ -48,14 +48,25 @@ body {
       @apply text-white  mb-4 text-xl md:text-2xl  font-bold leading-normal;
 
   }
+  
   p{
      @apply text-white/70   text-[15px] font-normal leading-normal;
+  }
+
+  .btn{
+   
+    @apply px-8 py-3 bg-white cursor-pointer text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg
+  }
+  .btn-light{
+    @apply px-6 py-2 rounded-full text-sm
   }
 }
 
 .dark-gradient{
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF) ,
 radial-gradient(80.46% 104.31% at 50% 0%, #132436 0%, #070B0F 84.83%) ;
+
+
 
 }
 .one-tap-buy-gradient {
