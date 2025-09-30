@@ -14,7 +14,7 @@ const WaitlistPage = () => {
     email: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(true);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

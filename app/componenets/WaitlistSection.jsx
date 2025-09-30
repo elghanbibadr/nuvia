@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import Link from 'next/link';
 
 const waitlistFeatures = [
   {
@@ -66,9 +67,11 @@ const WaitlistSection = () => {
 
       {/* CTA Button */}
       <div className="flex justify-center">
-     <button className="px-8 py-3 bg-white text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg ">
-              Join Waitlist Now
-            </button>
+     <Link href="/waitlist">
+       <button className="px-8 py-3 bg-white text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg ">
+                Join Waitlist Now
+              </button>
+     </Link>
       </div>
     </div>
   )
