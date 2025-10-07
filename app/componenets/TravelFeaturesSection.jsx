@@ -53,7 +53,7 @@ const TravelFeaturesSection = () => {
       {/* Header Section */}
       <div className="text-center mb-16">
         <h2 className=" mb-4">
-          More Time Exploring, Less Time Planning. Travel Without Complexity.
+          More Time Exploring,* Less Time Planning. Travel Without Complexity.
         </h2>
         <p className=" subheading-paragprah text-[#FFFFFFCC] md:w-[70%] text-center mx-auto">
           Nüvia removes travel planning stress, letting you focus on enjoying your journey

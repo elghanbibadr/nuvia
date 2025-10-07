@@ -2,6 +2,20 @@
 
 import { motion } from 'framer-motion';
 import Card from './Card';
+import aiicon from "@/public/ai.png"
+import alarm from "@/public/alarm.png"
+import mouseicon from "@/public/mouse.png"
+import Intelligent from "@/public/intelligence.png"
+import earthicon from "@/public/earthicon.png"
+import paper from "@/public/paper.png"
+import money from "@/public/mney.png"
+import piece from "@/public/piece.png"
+import recycle from "@/public/recycle.png"
+import time from "@/public/timing.png"
+
+
+
+import Image from 'next/image';
 
 // Your existing icon components remain the same...
 const FragmentationIcon = () => (
@@ -15,31 +29,31 @@ const FragmentationIcon = () => (
 const PROBLEMS_DATA = [
   {
     id: 'fragmentation',
-    icon: '🧩',
+    icon: piece,
     title: "Fragmentation",
     description: "Separate platforms for flights, hotels, transfers, activities, and insurance"
   },
   {
     id: 'time-consuming',
-    icon: "⏳",
+    icon: time,
     title: "Time Consuming", 
     description: "Hours spent researching, comparing, and booking each component"
   },
   {
     id: 'hidden-costs',
-    icon: "💸",
+    icon: money,
     title: "Hidden Costs",
     description: "Unexpected fees discovered only at checkout"
   },
   {
     id: 'coordination',
-    icon: "🔀",
+    icon: recycle,
     title: "Lack of Coordination",
     description: "Bookings that don't align, creating gaps and conflicts in your itinerary"
   },
   {
     id: 'generic',
-    icon:"📄",
+    icon:paper,
     title: "Generic Recommendations",
     description: "One-size-fits-all suggestions that ignore your unique preferences"
   }
@@ -48,31 +62,31 @@ const PROBLEMS_DATA = [
 const SOLUTIONS_DATA = [
   {
     id: 'ai-concierge',
-    icon: "🤖",
+    icon: aiicon,
     title: "AI Travel Concierge",
     description: "Your personal assistant that learns your preferences and handles all planning"
   },
   {
     id: 'unified-platform',
-    icon: "🌐",
+    icon:earthicon,
     title: "Unified Booking Platform", 
     description: "Flights, hotels, transfers, activities, insurance, and more in one place"
   },
   {
     id: 'optimization',
-    icon: "🧠",
+    icon: Intelligent,
     title: "Intelligent Optimization",
     description: "AI finds the best combinations of services for your budget and schedule"
   },
   {
     id: 'one-click',
-    icon:"🖱",
+    icon:mouseicon,
     title: "One-Click Purchase",
     description: "Complete your entire trip booking with a single button press"
   },
   {
     id: 'real-time',
-    icon: "⏱️",
+    icon: alarm,
     title: "Real-Time Coordination",
     description: "All bookings are synchronized and optimized for seamless travel flow"
   }
@@ -122,8 +136,8 @@ const Section = ({ title, data, variant, gradientStyle }) => (
         {data.slice(0, 2).map((item) => (
           <motion.div key={item.id} variants={itemVariants}>
             <Card className="rounded-[32px] bg-white/5 h-[290px] md:h-[250px] flex flex-col">
-              <div className="w-20 scale-150 h-20 mx-auto mb-4 flex items-center justify-center flex-shrink-0">
-                {item.icon}
+              <div className=" mx-auto mb-4 flex items-center justify-center flex-shrink-0">
+                <Image src={item.icon.src} height={40} width={40} alt={item.title} />
               </div>
               <div className="flex-1 flex flex-col">
                 <h4 className="text-white !font-raleway text-lg font-semibold mb-3 flex-shrink-0">
@@ -149,8 +163,8 @@ const Section = ({ title, data, variant, gradientStyle }) => (
         {data.slice(2, 4).map((item) => (
           <motion.div key={item.id} variants={itemVariants}>
             <Card className="rounded-[32px] bg-white/5 h-[290px] md:h-[250px] flex flex-col">
-              <div className="w-20 scale-150 h-20 mx-auto mb-4 flex items-center justify-center flex-shrink-0">
-                {item.icon}
+               <div className=" mx-auto mb-4 flex items-center justify-center flex-shrink-0">
+                <Image src={item.icon.src} height={40} width={40} alt={item.title} />
               </div>
               <div className="flex-1 flex flex-col">
                 <h4 className="text-white !font-raleway text-lg font-semibold mb-3 flex-shrink-0">
@@ -175,9 +189,9 @@ const Section = ({ title, data, variant, gradientStyle }) => (
       >
         <motion.div variants={itemVariants} className="w-full max-w-md">
           <Card className="rounded-[32px] bg-white/5 h-[290px] md:h-[250px] flex flex-col">
-            <div className="w-20 scale-150 h-20 mx-auto mb-4 flex items-center justify-center flex-shrink-0">
-              {data[4].icon}
-            </div>
+              <div className=" mx-auto mb-4 flex items-center justify-center flex-shrink-0">
+                <Image src={data[4].icon.src} height={40} width={40} alt={data[4].title} />
+              </div>
             <div className="flex-1 flex flex-col">
               <h4 className="text-white !font-raleway text-lg font-semibold mb-3 flex-shrink-0">
                 {data[4].title}
@@ -197,7 +211,10 @@ const ProblemsAndSolutions = () => {
   return (
     <section className="min-h-screen py-16 px-2">
       <div className="max-w-7xl mx-auto">
-        
+        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 48.86H48V0.86H0V48.86Z" fill="white"/>
+</svg>
+
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
