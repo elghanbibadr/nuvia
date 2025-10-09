@@ -117,7 +117,7 @@ const itemVariants = {
 // Updated Section component with fixed card heights
 const Section = ({ title, data, variant, gradientStyle }) => (
   <div 
-    className='p-2 md:p-6 rounded-[32px]' 
+    className=' rounded-[32px]' 
     style={{ background: gradientStyle }}
   >
     <h3 className="text-3xl font-bold text-white mb-8 text-center !font-raleway">
@@ -209,8 +209,8 @@ const Section = ({ title, data, variant, gradientStyle }) => (
 
 const ProblemsAndSolutions = () => {
   return (
-    <section className="min-h-screen py-16 px-2">
-      <div className="max-w-7xl mx-auto">
+    <section className="my-20">
+      <div className="">
 
         {/* Header */}
         <motion.div

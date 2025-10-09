@@ -1,29 +1,36 @@
 import React from 'react';
 import Card from './Card';
 import Link from 'next/link';
-
+import earth from "@/public/earthicon.png"
+import perfectperso from "@/public/perfectperso.png"
+import support from "@/public/support.png"
+import coordination from "@/public/coordination.png"
+import timing from "@/public/timing.png"
+import savemoney from "@/public/savemoney.png"
+import eliminatestress from "@/public/eliminatestress.png"
+import Image from 'next/image';
 const waitlistFeatures = [
   {
     id: 1,
-    icon: "🌐",
+    icon:earth,
     title: "Early Access",
     description: "Be among the very first to experience Nüvia's revolutionary AI travel planning platform"
   },
   {
     id: 2,
-    icon: "🎯",
+    icon: perfectperso,
     title: "Exclusive Discounts",
     description: "Receive special pricing and offers available only to whitelist members"
   },
   {
     id: 3,
-    icon: "📞",
+    icon: support,
     title: "Testing Opportunities",
     description: "Help shape the future of AI travel technology by providing feedback on new features"
   },
   {
     id: 4,
-    icon: "🔄",
+    icon: coordination,
     title: "Priority Support",
     description: "Get direct access to our dedicated support team for any questions or assistance"
   }
@@ -31,10 +38,10 @@ const waitlistFeatures = [
 
 const WaitlistSection = () => {
   return (
-    <div className=' py-16 px-8'>
+    <div className='my-20 '>
       
       {/* Header Section */}
-      <div className="text-center mb-16 max-w-4xl mx-auto">
+      <div className="text-center mb-16 mx-auto">
         <h2 className=" mb-6">
           Experience the Future of Travel Planning. Secure Your Spot.
         </h2>
@@ -50,13 +57,13 @@ const WaitlistSection = () => {
       </div>
 
       {/* Features Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12 ">
         {waitlistFeatures.map((feature) => (
                <Card 
             key={feature.id}
             className="rounded-[32px] bg-[#18232D]  flex flex-col"
           >
-            <span className="text-2xl mx-auto">{feature.icon}</span>
+              <Image className='mx-auto mb-4' src={feature.icon} alt={feature.title} width={30} height={30} />
             
         
             <h4 className='text-white !font-raleway text-lg font-semibold mb-3 flex-shrink-0'>{feature.title}</h4>

@@ -56,7 +56,7 @@ const features = [
 
 const TravelFeaturesSection = () => {
   return (
-    <div className='w-full p-4'>
+    <div className='w-full my-20 '>
       {/* Header Section */}
       <div className="text-center mb-16">
         <h2 className="mb-4">

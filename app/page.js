@@ -13,12 +13,14 @@ const page = () => {
   return (
   <>
    <Hero/>
-   <ProblemsAndSolutions/>
-   <EffortlessTravel/>
-   <TravelFeaturesSection/>
-   <Roadmap/>
-   <WaitlistSection/>
-   <Footer/>
+   <div className='p-3 md:p-4 max-w-[1300px] mx-auto'>
+     <ProblemsAndSolutions/>
+     <EffortlessTravel/>
+     <TravelFeaturesSection/>
+     <Roadmap/>
+     <WaitlistSection/>
+     <Footer/>
+   </div>
   </>
   )
 }

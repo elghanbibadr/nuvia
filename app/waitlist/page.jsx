@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import avatars from "@/public/avatars.svg";
+import success from "@/public/success.png"
 
 const WaitlistPage = () => {
   const [formData, setFormData] = useState({
@@ -107,7 +108,9 @@ const WaitlistPage = () => {
 
   const renderSuccessMessage = () => (
     <div className="text-center py-8">
-      <span className="block font-bold text-[90px] mb-4">🎉</span>
+      <span className=" mb-4">
+        <Image className='mx-auto mb-10' src={success} width={70} height={70} alt='success icon' />
+      </span>
       <h3 className="text-white mb-10">You’re officially on the list!</h3>
      <p className='text-white/60 text-sm mb-6'>
       Thanks for joining the NÜVIA waitlist — your gateway to effortless, AI-powered travel is now reserved.
@@ -176,24 +179,25 @@ We’ll reach out soon with early access, insider updates, and exclusive launch 
               <span className="text-white/60 text-xs">2k+ explorers already joined</span>
             </div>
 
-            <button 
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full px-8 py-3 bg-white text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isSubmitting ? 'Joining...' : 'Join Now'}
-            </button>
-
-            <p className="text-white/80 text-xs text-center">
-              By clicking Join Now, you accept our{' '}
-              <Link href="/terms" className="text-blue-400 hover:text-blue-300 transition-colors">
-                Terms
-              </Link>
-              {' '}and{' '}
-              <Link href="/privacy" className="text-blue-400 hover:text-blue-300 transition-colors">
-                Privacy Policy
-              </Link>
-            </p>
+            <div className='flex items-center gap-4'>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-[50%] cursor-pointer  py-3 bg-white text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? 'Joining...' : 'Join Now'}
+              </button>
+              <p className="text-white/40 text-nowrap text-[10px]">
+                By clicking Join Now, you accept our{' '}
+                <Link href="/terms" className="text-white hover:text-blue-300 transition-colors">
+                  Terms
+                </Link>
+                {' '}and{' '}
+                <Link href="/privacy" className="text-white hover:text-blue-300 transition-colors">
+                  Privacy Policy
+                </Link>
+              </p>
+            </div>
           </form>
         )}
       </div>

@@ -6,10 +6,11 @@ import RecommandationCard from './RecommandationCard'
 import Card from './Card'
 import DynamicPriceMonitoring from './DynamicPriceMonitoring'
 import ConversationalTipCard from './ConversationalTipCard'
+import intersactionmobile from "@/public/intersactionmobile.svg"
 
 const EffortlessTravel = () => {
   return (
-   <div className='w-full px-4 py-8'>
+   <div className='w-full my-20 '>
      <div className=' mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4'>
        
        {/* LEFT COLUMN - Takes 3 columns */}
@@ -27,11 +28,23 @@ const EffortlessTravel = () => {
       
        {/* CENTER COLUMN - Takes 6 columns */}
      <div className='lg:col-span-6 flex items-stretch justify-center'>
-         <img 
-           src="/intersaction.svg"
-           alt='NUVIA Integration Diagram'
-           className='w-full h-full object-contain'
-         />
+  {/* Mobile version */}
+  <Image
+    src="/intersactionmobile.svg"
+    alt='NUVIA Integration Diagram'
+    width={416}
+    height={641}
+    className='w-full h-auto object-contain md:hidden'
+  />
+  
+  {/* Desktop version */}
+  <Image 
+    src="/intersaction.svg"
+    alt='NUVIA Integration Diagram'
+    width={416}
+    height={641}
+    className='hidden md:block w-full h-full object-fill'
+  />
        </div>
       
        {/* RIGHT COLUMN - Takes 3 columns */}
