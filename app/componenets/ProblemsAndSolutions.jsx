@@ -211,9 +211,6 @@ const ProblemsAndSolutions = () => {
   return (
     <section className="min-h-screen py-16 px-2">
       <div className="max-w-7xl mx-auto">
-        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 48.86H48V0.86H0V48.86Z" fill="white"/>
-</svg>
 
         {/* Header */}
         <motion.div

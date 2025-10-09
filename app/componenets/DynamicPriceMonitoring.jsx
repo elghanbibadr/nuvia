@@ -5,7 +5,7 @@ import priceMonitoring from "@/public/priceMonitoring.svg"
 
 const DynamicPriceMonitoring = () => {
   return (
-    <Card className="dark-gradient2" >
+    <Card className="dark-gradient2 " >
       <h4>Dynamic Price Monitoring</h4>
       <p className='text-white/70 text-center font-normal text-[15px] leading-normal'>
  Price tracking ensures the best deals with alerts for drops and optimal booking times

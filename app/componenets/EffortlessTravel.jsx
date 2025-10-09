@@ -10,14 +10,14 @@ import ConversationalTipCard from './ConversationalTipCard'
 const EffortlessTravel = () => {
   return (
    <div className='w-full px-4 py-8'>
-     <div className='max-w-[1792px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 auto-rows-min'>
+     <div className=' mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4'>
        
        {/* LEFT COLUMN - Takes 3 columns */}
        <div className='lg:col-span-3 flex flex-col gap-4'>
          <IternaryCard/>
          <RecommandationCard/>
          <Card className="dark-gradient2">
-           <div className='bg-[#162538] rounded-full p-3'>
+           <div className='bg-[#162538] h-full rounded-full p-3'>
              <div className='one-tap-buy-gradient p-3 rounded-full flex items-center justify-center'>
                <h6 className='text-white text-sm md:text-xl'>One Tap Buy</h6>
              </div>
@@ -25,18 +25,13 @@ const EffortlessTravel = () => {
          </Card>
        </div>
       
-       {/* CENTER COLUMN - Takes 6 columns (larger) */}
-       <div className='lg:col-span-6 flex items-center justify-center min-h-[600px]'>
-         <div className='w-full h-full flex items-center justify-center'>
-           <Image 
-             className='w-full h-auto max-w-full' 
-             src={inter} 
-             width={800} 
-             height={800} 
-             alt='NUVIA Integration Diagram'
-             priority
-           />
-         </div>
+       {/* CENTER COLUMN - Takes 6 columns */}
+     <div className='lg:col-span-6 flex items-stretch justify-center'>
+         <img 
+           src="/intersaction.svg"
+           alt='NUVIA Integration Diagram'
+           className='w-full h-full object-contain'
+         />
        </div>
       
        {/* RIGHT COLUMN - Takes 3 columns */}
