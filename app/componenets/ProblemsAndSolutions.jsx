@@ -117,7 +117,7 @@ const itemVariants = {
 // Updated Section component with fixed card heights
 const Section = ({ title, data, variant, gradientStyle }) => (
   <div 
-    className=' rounded-[32px]' 
+    className=' rounded-[32px] p-6' 
     style={{ background: gradientStyle }}
   >
     <h3 className="text-3xl font-bold text-white mb-8 text-center !font-raleway">
@@ -127,7 +127,7 @@ const Section = ({ title, data, variant, gradientStyle }) => (
     <div className="space-y-4">
       {/* First Row */}
       <motion.div 
-        className="grid grid-cols-2 gap-2"
+        className="grid grid-cols-2 gap-4 "
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -238,7 +238,7 @@ const ProblemsAndSolutions = () => {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="grid lg:grid-cols-2 gap-0 relative">
+          <div className="grid lg:grid-cols-2 gap-6 relative">
             
             {/* Problems Section */}
             <Section 
@@ -257,7 +257,6 @@ const ProblemsAndSolutions = () => {
             />
 
             {/* Vertical Divider Line */}
-            <div className="absolute left-1/2 top-4 bottom-4 w-px bg-white/20 transform -translate-x-0.5 hidden lg:block"></div>
           </div>
         </motion.div>
       </div>

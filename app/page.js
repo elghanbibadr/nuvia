@@ -13,7 +13,7 @@ const page = () => {
   return (
   <>
    <Hero/>
-   <div className='p-3 md:p-4 max-w-[1300px] mx-auto'>
+   <div className='p-3 md:p-4 max-w-[1350px] mx-auto'>
      <ProblemsAndSolutions/>
      <EffortlessTravel/>
      <TravelFeaturesSection/>
