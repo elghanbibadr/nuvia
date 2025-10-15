@@ -62,5 +62,27 @@
         "description": "Kõik broneeringud on sünkroniseeritud ja optimeeritud sujuva reisivoo jaoks"
       }
     }
+  },
+  "AIFeatures": {
+    "itinerary": {
+      "title": "Nutikas Marsruudi Optimeerimine",
+      "description": "Meie AI leiab parima ajakava ja marsruudi reaalajas tõhususe ja naudingu tagamiseks"
+    },
+    "recommendations": {
+      "title": "Personaliseeritud Soovitused",
+      "description": "Meie AI kohaneb teie eelistustega, pakkudes üha täpsemaid ja meeldivamaid soovitusi."
+    },
+    "priceMonitoring": {
+      "title": "Dünaamiline Hinna Jälgimine",
+      "description": "Hinna jälgimine tagab parimad pakkumised hoiatustega languste ja optimaalsete broneerimisaegade kohta"
+    },
+    "conversational": {
+      "title": "Vestluslik Reisi Planeerimine",
+      "description": "Kirjeldage oma unistuste reisi ja meie AI koostab koheselt ideaalse marsruudi"
+    },
+    "oneTapBuy": "Ühe Puudutusega Ost",
+    "batch": "Partii",
+    "realtime": "Reaalajas",
+    "diagramAlt": "NUVIA Integratsiooni Skeem"
   }
 }

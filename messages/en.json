@@ -62,5 +62,27 @@
         "description": "All bookings are synchronized and optimized for seamless travel flow"
       }
     }
+  },
+  "AIFeatures": {
+    "itinerary": {
+      "title": "Smart Itinerary Optimization",
+      "description": "Our AI finds the best schedule and route in real time for efficiency and enjoyment"
+    },
+    "recommendations": {
+      "title": "Personalized Recommendations",
+      "description": "Our AI adapts to your preferences, giving ever more accurate, delightful suggestions."
+    },
+    "priceMonitoring": {
+      "title": "Dynamic Price Monitoring",
+      "description": "Price tracking ensures the best deals with alerts for drops and optimal booking times"
+    },
+    "conversational": {
+      "title": "Conversational Trip Planning",
+      "description": "Describe your dream trip, and our AI instantly builds the perfect itinerary"
+    },
+    "oneTapBuy": "One Tap Buy",
+    "batch": "Batch",
+    "realtime": "Realtime",
+    "diagramAlt": "NUVIA Integration Diagram"
   }
 }
