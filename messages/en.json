@@ -290,5 +290,93 @@
       "email": "Email: support@nuvia.me",
       "copyright": "© 2025 NÜVIA OÜ. All rights reserved."
     }
+  },
+   "Privacy": {
+    "back": "Back",
+    "title": "Privacy Policy – NÜVIA OÜ (GDPR-Compliant)",
+    "effectiveDate": "Effective Date:",
+    "effectiveDateValue": "22 September 2025",
+    "dataController": "Data Controller:",
+    "dataControllerValue": "NÜVIA OÜ, Reg. No. 17301668, Estonia",
+    
+    "section1": {
+      "title": "1. Introduction",
+      "paragraph": "This Privacy Policy explains how NÜVIA OÜ collects, uses, discloses, and protects your personal data in accordance with the EU General Data Protection Regulation (GDPR) and other applicable data protection laws."
+    },
+    
+    "section2": {
+      "title": "2. What Data We Collect",
+      "intro": "We collect the following categories of data:",
+      "item1": "Identity and contact data (e.g., name, email, phone)",
+      "item2": "Technical data (e.g., IP address, device type, browser, OS)",
+      "item3": "Usage data (e.g., pages visited, clicks, time spent)",
+      "item4": "Cookies and tracking IDs (see separate Cookies Policy)",
+      "item5": "Any information voluntarily provided via forms, feedback"
+    },
+    
+    "section3": {
+      "title": "3. Legal Basis for Processing (GDPR Article 6)",
+      "intro": "We process your personal data lawfully, on one or more of the following bases:",
+      "item1": "Consent (Art. 6(1)(a))",
+      "item2": "Contractual necessity (Art. 6(1)(b))",
+      "item3": "Legal obligation (Art. 6(1)(c))",
+      "item4": "Legitimate interests (Art. 6(1)(f)), e.g., fraud prevention, analytics, service improvement"
+    },
+    
+    "section4": {
+      "title": "4. Purposes of Processing",
+      "item1": "To provide and improve our services",
+      "item2": "To communicate with users",
+      "item3": "To analyze usage patterns",
+      "item4": "To ensure security and regulatory compliance"
+    },
+    
+    "section5": {
+      "title": "5. Data Sharing & Disclosure",
+      "intro": "We may share your personal data with:",
+      "item1": "Hosting, analytics, and communication service providers",
+      "item2": "Legal authorities where required",
+      "item3": "No sale of personal data occurs under any circumstances",
+      "item4": "Data is only shared with proper contractual safeguards"
+    },
+    
+    "section6": {
+      "title": "6. International Data Transfers",
+      "intro": "Data may be transferred to processors outside the EU/EEA. In such cases, we ensure protection via:",
+      "item1": "Standard Contractual Clauses (SCCs)",
+      "item2": "Adequacy decisions under Article 45 GDPR",
+      "item3": "Binding corporate rules (BCRs) where applicable"
+    },
+    
+    "section7": {
+      "title": "7. Data Retention",
+      "intro": "We retain your personal data:",
+      "item1": "As long as necessary to fulfill the purposes stated",
+      "item2": "Or as required under Estonian and EU legal retention obligations (e.g., accounting, tax)"
+    },
+    
+    "section8": {
+      "title": "8. Your Rights under GDPR",
+      "intro": "You have the right to:",
+      "item1": "Access your data (Art. 15 GDPR)",
+      "item2": "Rectify inaccurate data (Art. 16)",
+      "item3": "Erase your data (\"right to be forgotten\", Art. 17)",
+      "item4": "Restrict or object to processing (Art. 18-21)",
+      "item5": "Data portability (Art. 20)",
+      "item6": "Withdraw consent at any time without affecting prior processing",
+      "item7": "Lodge a complaint with a Data Protection Authority"
+    },
+    
+    "section9": {
+      "title": "9. Supervisory Authority Contact",
+      "paragraph": "You may contact the Estonian Data Protection Inspectorate (Andmekaitse Inspektsioon) at www.aki.ee"
+    },
+    
+    "section10": {
+      "title": "10. Contact",
+      "intro": "For privacy inquiries:",
+      "email": "Email: contact@nuvia.me",
+      "address": "Address: Ahtri tn 12, Tallinn 15551, Estonia"
+    }
   }
 }

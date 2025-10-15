@@ -290,6 +290,93 @@
       "email": "E-post: support@nuvia.me",
       "copyright": "© 2025 NÜVIA OÜ. Kõik õigused kaitstud."
     }
+  }, "Privacy": {
+    "back": "Tagasi",
+    "title": "Privaatsuspoliitika – NÜVIA OÜ (GDPR-nõuetele Vastav)",
+    "effectiveDate": "Jõustumiskuupäev:",
+    "effectiveDateValue": "22. september 2025",
+    "dataController": "Andmete Töötleja:",
+    "dataControllerValue": "NÜVIA OÜ, Reg. nr 17301668, Eesti",
+    
+    "section1": {
+      "title": "1. Sissejuhatus",
+      "paragraph": "See Privaatsuspoliitika selgitab, kuidas NÜVIA OÜ kogub, kasutab, avaldab ja kaitseb teie isikuandmeid kooskõlas EL üldise andmekaitse määrusega (GDPR) ja muude kohaldatavate andmekaitse seadustega."
+    },
+    
+    "section2": {
+      "title": "2. Milliseid Andmeid Me Kogume",
+      "intro": "Kogume järgmisi andmekategooriaid:",
+      "item1": "Isiku- ja kontaktandmed (nt nimi, e-post, telefon)",
+      "item2": "Tehnilised andmed (nt IP-aadress, seadme tüüp, brauser, OS)",
+      "item3": "Kasutusandmed (nt külastatud lehed, klikid, kulutatud aeg)",
+      "item4": "Küpsised ja jälgimise ID-d (vaata eraldi Küpsiste Poliitikat)",
+      "item5": "Mis tahes teave, mis esitatakse vabatahtlikult vormide, tagasiside kaudu"
+    },
+    
+    "section3": {
+      "title": "3. Töötlemise Õiguslik Alus (GDPR Artikkel 6)",
+      "intro": "Töötleme teie isikuandmeid seaduslikult, tuginedes ühele või mitmele järgmisele alusele:",
+      "item1": "Nõusolek (Art. 6(1)(a))",
+      "item2": "Lepinguline vajalikkus (Art. 6(1)(b))",
+      "item3": "Õiguslik kohustus (Art. 6(1)(c))",
+      "item4": "Õigustatud huvid (Art. 6(1)(f)), nt pettuste ennetamine, analüütika, teenuse parandamine"
+    },
+    
+    "section4": {
+      "title": "4. Töötlemise Eesmärgid",
+      "item1": "Meie teenuste pakkumiseks ja parandamiseks",
+      "item2": "Kasutajatega suhtlemiseks",
+      "item3": "Kasutusmudelite analüüsimiseks",
+      "item4": "Turvalisuse ja regulatiivse vastavuse tagamiseks"
+    },
+    
+    "section5": {
+      "title": "5. Andmete Jagamine ja Avaldamine",
+      "intro": "Võime jagada teie isikuandmeid:",
+      "item1": "Hostingu, analüütika ja suhtlusteenuste pakkujatega",
+      "item2": "Õigusasutustega vajadusel",
+      "item3": "Isikuandmete müük ei toimu mingil juhul",
+      "item4": "Andmeid jagatakse ainult nõuetekohaste lepinguliste tagatistega"
+    },
+    
+    "section6": {
+      "title": "6. Rahvusvahelised Andmete Ülekanded",
+      "intro": "Andmeid võidakse edastada töötlejatele väljaspool EL/EMPd. Sellistel juhtudel tagame kaitse:",
+      "item1": "Standardsed lepingulised klauslid (SCC)",
+      "item2": "Adekvaatsuse otsused vastavalt GDPR artiklile 45",
+      "item3": "Siduvad ettevõttesisesed eeskirjad (BCR), kui kohaldatav"
+    },
+    
+    "section7": {
+      "title": "7. Andmete Säilitamine",
+      "intro": "Säilitame teie isikuandmeid:",
+      "item1": "Nii kaua kui on vajalik eesmärkide täitmiseks",
+      "item2": "Või nagu nõutud Eesti ja EL õigusliku säilitamise kohustuste alusel (nt raamatupidamine, maksud)"
+    },
+    
+    "section8": {
+      "title": "8. Teie Õigused GDPR Alusel",
+      "intro": "Teil on õigus:",
+      "item1": "Juurdepääs oma andmetele (Art. 15 GDPR)",
+      "item2": "Ebatäpsete andmete parandamine (Art. 16)",
+      "item3": "Oma andmete kustutamine (\"õigus olla unustatud\", Art. 17)",
+      "item4": "Töötlemise piiramine või sellele vastuväide (Art. 18-21)",
+      "item5": "Andmete ülekandmise õigus (Art. 20)",
+      "item6": "Nõusoleku tagasivõtmine igal ajal, ilma et see mõjutaks eelnevat töötlemist",
+      "item7": "Kaebuse esitamine Andmekaitse Inspektsioonile"
+    },
+    
+    "section9": {
+      "title": "9. Järelevalveasutuse Kontakt",
+      "paragraph": "Võite võtta ühendust Eesti Andmekaitse Inspektsiooniga aadressil www.aki.ee"
+    },
+    
+    "section10": {
+      "title": "10. Kontakt",
+      "intro": "Privaatsusega seotud küsimuste kohta:",
+      "email": "E-post: contact@nuvia.me",
+      "address": "Aadress: Ahtri tn 12, Tallinn 15551, Eesti"
+    }
   }
 
 }
