@@ -25,7 +25,7 @@ const NuviaLogo = () => (
 );
 
 const Hero = () => {
-    const t = useTranslations('HomePage');
+    const t = useTranslations('Hero');
 
   const containerRef = useRef(null);
   const { scrollY } = useScroll({
@@ -84,20 +84,18 @@ const Hero = () => {
             className="text-white text-xl font-bold mb-2" 
             style={{ textShadow: '2px 2px 20px rgba(0,0,0,0.8)' }}
           >
-            Future of Travel
+            {t("subtitle")}
             
           </h3>
           <p 
             className="subheading-paragprah text-white/95  md:max-w-lg mx-auto mb-8"
             style={{ textShadow: '1px 1px 15px rgba(0,0,0,0.8)' }}
           >
-            Experience the future of personalized, seamless travel.
-            Nüvia's AI assembles your perfect journey and lets you
-            book everything with one click
+          {t('description')}
           </p>
           <Link href="/waitlist">
             <button className="btn">
-              Join Waitlist Now
+           {t("cta")}
             </button>
           </Link>
         </motion.div>
