@@ -142,6 +142,24 @@
         "description": "Saa otsene juurdepääs meie pühendunud tugimeeskonnale mis tahes küsimuste või abi saamiseks"
       }
     }
+  },
+   "Footer": {
+    "location": "Tallinn, Eesti",
+    "email": "E-post",
+    "emailAddress": "info@nuvia.travel",
+    "quickLinks": {
+      "title": "Kiirlingid",
+      "requestSolution": "Küsi Lahendust",
+      "aiFeatures": "AI Funktsioonid",
+      "benefits": "Eelised"
+    },
+    "legal": {
+      "title": "Õiguslik",
+      "privacyPolicy": "Privaatsuspoliitika",
+      "termsOfService": "Teenuse Tingimused",
+      "cookieSettings": "Küpsiste Seaded"
+    },
+    "copyright": "© 2025 NÜVIA. Revolutsiooniliselt reisimist läbi kunstliku intelligentsi. Kõik õigused kaitstud."
   }
 
 }

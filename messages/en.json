@@ -142,5 +142,23 @@
         "description": "Get direct access to our dedicated support team for any questions or assistance"
       }
     }
+  },
+  "Footer": {
+    "location": "Tallinn, Estonia",
+    "email": "Email",
+    "emailAddress": "info@nuvia.travel",
+    "quickLinks": {
+      "title": "Quick Links",
+      "requestSolution": "Request a Solution",
+      "aiFeatures": "AI Features",
+      "benefits": "Benefits"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "cookieSettings": "Cookie Settings"
+    },
+    "copyright": "© 2025 NÜVIA. Revolutionizing travel through artificial intelligence. All rights reserved."
   }
 }
