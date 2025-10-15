@@ -425,5 +425,36 @@
       "email": "Email: contact@nuvia.me",
       "address": "Address: Ahtri tn 12, Tallinn 15551, Estonia"
     }
+  },
+    "Waitlist": {
+    "brandName": "NÜVIA",
+    "launchDate": "Launching Dec. 2025",
+    "title": "Be the First to Experience the Future of Travel",
+    "description": "Join the NÜVIA waitlist — and be first to experience the AI-powered app that plans your perfect trip in seconds.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter email",
+      "joinersCount": "2k+ explorers already joined",
+      "submitButton": "Join Now",
+      "submitting": "Joining...",
+      "termsText": "By clicking Join Now, you accept our",
+      "terms": "Terms",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "nameMinLength": "Name must be at least 2 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "submitError": "Something went wrong. Please try again."
+    },
+    "success": {
+      "title": "You're officially on the list!",
+      "description": "Thanks for joining the NÜVIA waitlist — your gateway to effortless, AI-powered travel is now reserved. We'll reach out soon with early access, insider updates, and exclusive launch perks. Until then, start dreaming — we'll handle the planning."
+    }
   }
+
 }

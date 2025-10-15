@@ -424,5 +424,65 @@
       "email": "E-post: contact@nuvia.me",
       "address": "Aadress: Ahtri tn 12, Tallinn 15551, Eesti"
     }
+  },
+  "Waitlist": {
+    "brandName": "NÜVIA",
+    "launchDate": "Launching Dec. 2025",
+    "title": "Be the First to Experience the Future of Travel",
+    "description": "Join the NÜVIA waitlist — and be first to experience the AI-powered app that plans your perfect trip in seconds.",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Enter email",
+      "joinersCount": "2k+ explorers already joined",
+      "submitButton": "Join Now",
+      "submitting": "Joining...",
+      "termsText": "By clicking Join Now, you accept our",
+      "terms": "Terms",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "validation": {
+      "nameRequired": "Name is required",
+      "nameMinLength": "Name must be at least 2 characters",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "submitError": "Something went wrong. Please try again."
+    },
+    "success": {
+      "title": "You're officially on the list!",
+      "description": "Thanks for joining the NÜVIA waitlist — your gateway to effortless, AI-powered travel is now reserved. We'll reach out soon with early access, insider updates, and exclusive launch perks. Until then, start dreaming — we'll handle the planning."
+    }
+  },
+  "Waitlist": {
+    "brandName": "NÜVIA",
+    "launchDate": "Käivitamine dets. 2025",
+    "title": "Ole Esimene, Kes Kogeb Reisimise Tulevikku",
+    "description": "Liitu NÜVIA ootenimekirjaga — ja ole esimene, kes kogeb AI-põhist rakendust, mis planeerib sinu ideaalse reisi sekunditega.",
+    "form": {
+      "nameLabel": "Nimi",
+      "namePlaceholder": "Sisesta oma nimi",
+      "emailLabel": "E-post",
+      "emailPlaceholder": "Sisesta e-post",
+      "joinersCount": "2k+ avastajat on juba liitunud",
+      "submitButton": "Liitu Kohe",
+      "submitting": "Liitun...",
+      "termsText": "Klõpsates Liitu Kohe, nõustute meie",
+      "terms": "Tingimustega",
+      "and": "ja",
+      "privacyPolicy": "Privaatsuspoliitikaga"
+    },
+    "validation": {
+      "nameRequired": "Nimi on kohustuslik",
+      "nameMinLength": "Nimi peab olema vähemalt 2 tähemärki",
+      "emailRequired": "E-post on kohustuslik",
+      "emailInvalid": "Palun sisestage kehtiv e-posti aadress",
+      "submitError": "Midagi läks valesti. Palun proovige uuesti."
+    },
+    "success": {
+      "title": "Olete ametlikult nimekirjas!",
+      "description": "Täname, et liitusite NÜVIA ootenimekirjaga — teie värav lihtsasse, AI-põhisesse reisimisse on nüüd reserveeritud. Võtame teiega peagi ühendust varajase juurdepääsu, siseteabe ja eksklusiivsete käivitamiseelsete eeliste kohta. Seni ajani alustage unistamist — meie hoolitseme planeerimise eest."
+    }
   }
 }

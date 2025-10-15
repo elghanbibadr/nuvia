@@ -4,8 +4,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import avatars from "@/public/avatars.svg";
 import success from "@/public/success.png"
+import { useTranslations } from 'next-intl';
 
 const WaitlistPage = () => {
+  const t = useTranslations('Waitlist');
   const [formData, setFormData] = useState({
     name: '',
     email: ''
@@ -27,18 +29,18 @@ const WaitlistPage = () => {
     const newErrors = { name: '', email: '' };
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = t('validation.nameRequired');
       isValid = false;
     } else if (formData.name.trim().length < 2) {
-      newErrors.name = 'Name must be at least 2 characters';
+      newErrors.name = t('validation.nameMinLength');
       isValid = false;
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = t('validation.emailRequired');
       isValid = false;
     } else if (!validateEmail(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
+      newErrors.email = t('validation.emailInvalid');
       isValid = false;
     }
 
@@ -75,11 +77,9 @@ const WaitlistPage = () => {
       });
 
       if (!emailResponse.ok) {
-        console.log("email res",emailResponse)
+        console.log("email res", emailResponse)
         throw new Error('Failed to send email notification');
       }
-
-
 
       // Show success message
       setSubmitSuccess(true);
@@ -89,7 +89,7 @@ const WaitlistPage = () => {
       console.error('Submission error:', error);
       setErrors(prev => ({
         ...prev,
-        email: 'Something went wrong. Please try again.'
+        email: t('validation.submitError')
       }));
     } finally {
       setIsSubmitting(false);
@@ -101,11 +101,10 @@ const WaitlistPage = () => {
       <span className=" mb-4">
         <Image className='mx-auto mb-10' src={success} width={70} height={70} alt='success icon' />
       </span>
-      <h3 className="text-white mb-10">You’re officially on the list!</h3>
-     <p className='text-white/60 text-sm mb-6'>
-      Thanks for joining the NÜVIA waitlist — your gateway to effortless, AI-powered travel is now reserved.
-We’ll reach out soon with early access, insider updates, and exclusive launch perks. Until then, start dreaming — we’ll handle the planning.
-     </p>
+      <h3 className="text-white mb-10">{t('success.title')}</h3>
+      <p className='text-white/60 text-sm mb-6'>
+        {t('success.description')}
+      </p>
     </div>
   );
 
@@ -144,47 +143,49 @@ We’ll reach out soon with early access, insider updates, and exclusive launch 
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
-          <h1 className="text-3xl font-bold text-white mb-4 text-center md:text-left">NÜVIA</h1>
+          <h1 className="text-3xl font-bold text-white mb-4 text-center md:text-left">
+            {t('brandName')}
+          </h1>
           
           <div className='bg-[#262B32] px-2 mb-4 py-1 rounded-md w-fit'>
-            <p className="text-white text-xs font-semibold">Launching Dec. 2025</p>
+            <p className="text-white text-xs font-semibold">{t('launchDate')}</p>
           </div>
           
           <h2 className="text-xl md:text-2xl font-bold text-white mb-3">
-            Be the First to Experience the Future of Travel
+            {t('title')}
           </h2>
           
           <p className="text-white/60 text-sm mb-6">
-            Join the NÜVIA waitlist — and be first to experience the AI-powered app that plans your perfect trip in seconds.
+            {t('description')}
           </p>
         </div>}
 
         {submitSuccess ? renderSuccessMessage() : (
           <form onSubmit={handleSubmit} className="space-y-5">
-            {renderFormInput('name', 'Name', 'Enter your name')}
-            {renderFormInput('email', 'Email', 'Enter email', 'email')}
+            {renderFormInput('name', t('form.nameLabel'), t('form.namePlaceholder'))}
+            {renderFormInput('email', t('form.emailLabel'), t('form.emailPlaceholder'), 'email')}
 
             <div className="flex items-center gap-2">
               <Image height={50} src={avatars} width={50} alt="avatars" />
-              <span className="text-white/60 text-xs">2k+ explorers already joined</span>
+              <span className="text-white/60 text-xs">{t('form.joinersCount')}</span>
             </div>
 
             <div className='flex items-center gap-4'>
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-[50%] cursor-pointer  py-3 bg-white text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-[50%] cursor-pointer py-3 bg-white text-black rounded-full font-medium text-base hover:bg-gray-100 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Joining...' : 'Join Now'}
+                {isSubmitting ? t('form.submitting') : t('form.submitButton')}
               </button>
               <p className="text-white/40 text-nowrap text-[10px]">
-                By clicking Join Now, you accept our{' '}
+                {t('form.termsText')}{' '}
                 <Link href="/terms" className="text-white hover:text-blue-300 transition-colors">
-                  Terms
+                  {t('form.terms')}
                 </Link>
-                {' '}and{' '}
+                {' '}{t('form.and')}{' '}
                 <Link href="/privacy" className="text-white hover:text-blue-300 transition-colors">
-                  Privacy Policy
+                  {t('form.privacyPolicy')}
                 </Link>
               </p>
             </div>
