@@ -12,5 +12,55 @@
     "subtitle": "Reisimise Tulevik",
     "description": "Koge personaliseeritud, sujuva reisimise tulevikku. Nüvia AI koostab teie ideaalse reisi ja võimaldab broneerida kõik ühe klikiga",
     "cta": "Liitu Ootenimekirjaga"
+  },
+  "ProblemsAndSolutions": {
+    "header": "Väsinud Reisiplaneerimise Kaosest?",
+    "subheader": "Reisi planeerimine tähendab mitme saidi vahel žongleerimist, lõputuid valikuid ja eraldi broneeringuid, varjatud tasudega ja pidevat stressi. Nüvia AI muudab selle kaose üheks lihtsaks vestluseks, kohandades ja koordineerides teie kogu reisi sujuvalt.",
+    "problemsTitle": "Probleemid",
+    "solutionsTitle": "Lahendused",
+    "problems": {
+      "fragmentation": {
+        "title": "Killustatus",
+        "description": "Eraldi platvormid lendude, hotellide, üleviimiste, tegevuste ja kindlustuse jaoks"
+      },
+      "timeConsuming": {
+        "title": "Aeganõudev",
+        "description": "Tunnid kuluvad iga komponendi uurimisele, võrdlemisele ja broneerimisele"
+      },
+      "hiddenCosts": {
+        "title": "Peidetud Kulud",
+        "description": "Ootamatud tasud, mis avastatakse alles kassas"
+      },
+      "coordination": {
+        "title": "Koordineerimise Puudumine",
+        "description": "Broneeringud, mis ei sobitu, luues lünki ja konflikte teie marsruudis"
+      },
+      "generic": {
+        "title": "Üldised Soovitused",
+        "description": "Kõigile sobivad ettepanekud, mis ignoreerivad teie ainulaadseid eelistusi"
+      }
+    },
+    "solutions": {
+      "aiConcierge": {
+        "title": "AI Reisikonsjerž",
+        "description": "Teie isiklik abiline, kes õpib teie eelistusi ja tegeleb kogu planeerimisega"
+      },
+      "unifiedPlatform": {
+        "title": "Ühtne Broneerimisplatvorm",
+        "description": "Lennud, hotellid, üleviimised, tegevused, kindlustus ja palju muud ühes kohas"
+      },
+      "optimization": {
+        "title": "Intelligentne Optimeerimine",
+        "description": "AI leiab parimad teenuste kombinatsioonid teie eelarve ja ajakava jaoks"
+      },
+      "oneClick": {
+        "title": "Ühe Klikiga Ost",
+        "description": "Lõpetage kogu reisi broneerimine ühe nupuvajutusega"
+      },
+      "realTime": {
+        "title": "Reaalajas Koordineerimine",
+        "description": "Kõik broneeringud on sünkroniseeritud ja optimeeritud sujuva reisivoo jaoks"
+      }
+    }
   }
 }

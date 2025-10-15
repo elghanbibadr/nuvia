@@ -12,85 +12,8 @@ import money from "@/public/mney.png"
 import piece from "@/public/piece.png"
 import recycle from "@/public/recycle.png"
 import time from "@/public/timing.png"
-
-
-
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-
-// Your existing icon components remain the same...
-const FragmentationIcon = () => (
-  <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 48.86H48V0.86H0V48.86Z" fill="white"/>
-</svg>
-);
-
-// ... (keep all your other icon components)
-
-const PROBLEMS_DATA = [
-  {
-    id: 'fragmentation',
-    icon: piece,
-    title: "Fragmentation",
-    description: "Separate platforms for flights, hotels, transfers, activities, and insurance"
-  },
-  {
-    id: 'time-consuming',
-    icon: time,
-    title: "Time Consuming", 
-    description: "Hours spent researching, comparing, and booking each component"
-  },
-  {
-    id: 'hidden-costs',
-    icon: money,
-    title: "Hidden Costs",
-    description: "Unexpected fees discovered only at checkout"
-  },
-  {
-    id: 'coordination',
-    icon: recycle,
-    title: "Lack of Coordination",
-    description: "Bookings that don't align, creating gaps and conflicts in your itinerary"
-  },
-  {
-    id: 'generic',
-    icon:paper,
-    title: "Generic Recommendations",
-    description: "One-size-fits-all suggestions that ignore your unique preferences"
-  }
-];
-
-const SOLUTIONS_DATA = [
-  {
-    id: 'ai-concierge',
-    icon: aiicon,
-    title: "AI Travel Concierge",
-    description: "Your personal assistant that learns your preferences and handles all planning"
-  },
-  {
-    id: 'unified-platform',
-    icon:earthicon,
-    title: "Unified Booking Platform", 
-    description: "Flights, hotels, transfers, activities, insurance, and more in one place"
-  },
-  {
-    id: 'optimization',
-    icon: Intelligent,
-    title: "Intelligent Optimization",
-    description: "AI finds the best combinations of services for your budget and schedule"
-  },
-  {
-    id: 'one-click',
-    icon:mouseicon,
-    title: "One-Click Purchase",
-    description: "Complete your entire trip booking with a single button press"
-  },
-  {
-    id: 'real-time',
-    icon: alarm,
-    title: "Real-Time Coordination",
-    description: "All bookings are synchronized and optimized for seamless travel flow"
-  }
-];
 
 // Animation variants
 const containerVariants = {
@@ -134,7 +57,7 @@ const Section = ({ title, data, variant, gradientStyle }) => (
         viewport={{ once: true }}
       >
         {data.slice(0, 2).map((item) => (
-          <motion.div key={item.id} variants={itemVariants}>
+          <motion.div key={item.key} variants={itemVariants}>
             <Card className="rounded-[32px] !pt-6 justify-center items-center  bg-white/5 h-[200px] self-stretch flex flex-col">
               <div className=" mx-auto mb-4 flex items-center justify-center flex-shrink-0">
                 <Image src={item.icon.src} height={30} width={30} alt={item.title} />
@@ -161,7 +84,7 @@ const Section = ({ title, data, variant, gradientStyle }) => (
         viewport={{ once: true }}
       >
         {data.slice(2, 4).map((item) => (
-          <motion.div key={item.id} variants={itemVariants}>
+          <motion.div key={item.key} variants={itemVariants}>
             <Card className="rounded-[32px] !pt-6 justify-center items-center  bg-white/5 h-[200px] self-stretch flex flex-col">
                <div className=" mx-auto mb-4 flex items-center justify-center flex-shrink-0">
                 <Image src={item.icon.src} height={30} width={30} alt={item.title} />
@@ -208,6 +131,74 @@ const Section = ({ title, data, variant, gradientStyle }) => (
 );
 
 const ProblemsAndSolutions = () => {
+  const t = useTranslations('ProblemsAndSolutions');
+
+  const PROBLEMS_DATA = [
+    {
+      key: 'fragmentation',
+      icon: piece,
+      title: t('problems.fragmentation.title'),
+      description: t('problems.fragmentation.description')
+    },
+    {
+      key: 'timeConsuming',
+      icon: time,
+      title: t('problems.timeConsuming.title'),
+      description: t('problems.timeConsuming.description')
+    },
+    {
+      key: 'hiddenCosts',
+      icon: money,
+      title: t('problems.hiddenCosts.title'),
+      description: t('problems.hiddenCosts.description')
+    },
+    {
+      key: 'coordination',
+      icon: recycle,
+      title: t('problems.coordination.title'),
+      description: t('problems.coordination.description')
+    },
+    {
+      key: 'generic',
+      icon: paper,
+      title: t('problems.generic.title'),
+      description: t('problems.generic.description')
+    }
+  ];
+
+  const SOLUTIONS_DATA = [
+    {
+      key: 'aiConcierge',
+      icon: aiicon,
+      title: t('solutions.aiConcierge.title'),
+      description: t('solutions.aiConcierge.description')
+    },
+    {
+      key: 'unifiedPlatform',
+      icon: earthicon,
+      title: t('solutions.unifiedPlatform.title'),
+      description: t('solutions.unifiedPlatform.description')
+    },
+    {
+      key: 'optimization',
+      icon: Intelligent,
+      title: t('solutions.optimization.title'),
+      description: t('solutions.optimization.description')
+    },
+    {
+      key: 'oneClick',
+      icon: mouseicon,
+      title: t('solutions.oneClick.title'),
+      description: t('solutions.oneClick.description')
+    },
+    {
+      key: 'realTime',
+      icon: alarm,
+      title: t('solutions.realTime.title'),
+      description: t('solutions.realTime.description')
+    }
+  ];
+
   return (
     <section className="my-20">
       <div className="">
@@ -221,12 +212,10 @@ const ProblemsAndSolutions = () => {
           className="text-center mb-16"
         >
           <h2 className="">
-            Tired of Travel Planning Chaos?
+            {t('header')}
           </h2>
           <p className="subheading-paragprah text-[#FFFFFFCC] md:w-[70%] text-center mx-auto">
-            Planning a trip means juggling multiple sites, endless options, and separate bookings, with hidden fees and constant stress.
-            
-            Nüvia's AI transforms this chaos into one simple conversation, tailoring and coordinating your entire trip seamlessly.
+            {t('subheader')}
           </p>
         </motion.div>
 
@@ -242,7 +231,7 @@ const ProblemsAndSolutions = () => {
             
             {/* Problems Section */}
             <Section 
-              title="Problems"
+              title={t('problemsTitle')}
               data={PROBLEMS_DATA}
               variant="problem"
               gradientStyle="radial-gradient(80.46% 104.31% at 50% 0%, #132436 0%, #070B0F 84.83%)"
@@ -250,7 +239,7 @@ const ProblemsAndSolutions = () => {
 
             {/* Solutions Section */}
             <Section 
-              title="Solutions"
+              title={t('solutionsTitle')}
               data={SOLUTIONS_DATA}
               variant="solution"
               gradientStyle="radial-gradient(81.76% 105.99% at 50% -5.99%, #0076FF 0%, #012E62 100%)"

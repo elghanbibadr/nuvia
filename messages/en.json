@@ -12,5 +12,55 @@
     "subtitle": "Future of Travel",
     "description": "Experience the future of personalized, seamless travel. Nüvia's AI assembles your perfect journey and lets you book everything with one click",
     "cta": "Join Waitlist Now"
+  },
+  "ProblemsAndSolutions": {
+    "header": "Tired of Travel Planning Chaos?",
+    "subheader": "Planning a trip means juggling multiple sites, endless options, and separate bookings, with hidden fees and constant stress. Nüvia's AI transforms this chaos into one simple conversation, tailoring and coordinating your entire trip seamlessly.",
+    "problemsTitle": "Problems",
+    "solutionsTitle": "Solutions",
+    "problems": {
+      "fragmentation": {
+        "title": "Fragmentation",
+        "description": "Separate platforms for flights, hotels, transfers, activities, and insurance"
+      },
+      "timeConsuming": {
+        "title": "Time Consuming",
+        "description": "Hours spent researching, comparing, and booking each component"
+      },
+      "hiddenCosts": {
+        "title": "Hidden Costs",
+        "description": "Unexpected fees discovered only at checkout"
+      },
+      "coordination": {
+        "title": "Lack of Coordination",
+        "description": "Bookings that don't align, creating gaps and conflicts in your itinerary"
+      },
+      "generic": {
+        "title": "Generic Recommendations",
+        "description": "One-size-fits-all suggestions that ignore your unique preferences"
+      }
+    },
+    "solutions": {
+      "aiConcierge": {
+        "title": "AI Travel Concierge",
+        "description": "Your personal assistant that learns your preferences and handles all planning"
+      },
+      "unifiedPlatform": {
+        "title": "Unified Booking Platform",
+        "description": "Flights, hotels, transfers, activities, insurance, and more in one place"
+      },
+      "optimization": {
+        "title": "Intelligent Optimization",
+        "description": "AI finds the best combinations of services for your budget and schedule"
+      },
+      "oneClick": {
+        "title": "One-Click Purchase",
+        "description": "Complete your entire trip booking with a single button press"
+      },
+      "realTime": {
+        "title": "Real-Time Coordination",
+        "description": "All bookings are synchronized and optimized for seamless travel flow"
+      }
+    }
   }
 }
