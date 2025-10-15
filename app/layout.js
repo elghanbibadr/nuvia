@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
+import { NextIntlClientProvider } from "next-intl";
 
 
 const raleway = Raleway({
@@ -20,7 +21,8 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning={true}
         className={`${raleway.variable} antialiased`}
       >
-        {children}
+                <NextIntlClientProvider>{children}</NextIntlClientProvider>
+
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import rockWithMan from "@/public/rock.png";
 import HeaderNavigation from './HeaderNavigation';
+import { useTranslations } from 'next-intl';
 
 const NuviaLogo = () => (
   <svg 
@@ -24,6 +25,8 @@ const NuviaLogo = () => (
 );
 
 const Hero = () => {
+    const t = useTranslations('HomePage');
+
   const containerRef = useRef(null);
   const { scrollY } = useScroll({
     target: containerRef,
@@ -81,7 +84,9 @@ const Hero = () => {
             className="text-white text-xl font-bold mb-2" 
             style={{ textShadow: '2px 2px 20px rgba(0,0,0,0.8)' }}
           >
-            Future of Travel
+            {/* Future of Travel */}
+                  <h1>{t('title')}</h1>
+
           </h3>
           <p 
             className="subheading-paragprah text-white/95  md:max-w-lg mx-auto mb-8"
