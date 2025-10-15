@@ -1,6 +1,16 @@
 {
-  "HomePage": {
-    "title": "Tere tulemast",
-    "description": "See on minu veebileht"
+  "Navigation": {
+    "home": "Avaleht",
+    "problemAndSolution": "Probleem ja Lahendus",
+    "aiFeatures": "AI Funktsioonid",
+    "benefits": "Eelised",
+    "roadmap": "Tegevuskava",
+    "join": "Liitu"
+  },
+  "Hero": {
+    "title": "NÜVIA",
+    "subtitle": "Reisimise Tulevik",
+    "description": "Koge personaliseeritud, sujuva reisimise tulevikku. Nüvia AI koostab teie ideaalse reisi ja võimaldab broneerida kõik ühe klikiga",
+    "cta": "Liitu Ootenimekirjaga"
   }
 }

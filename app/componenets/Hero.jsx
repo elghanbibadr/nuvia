@@ -84,9 +84,8 @@ const Hero = () => {
             className="text-white text-xl font-bold mb-2" 
             style={{ textShadow: '2px 2px 20px rgba(0,0,0,0.8)' }}
           >
-            {/* Future of Travel */}
-                  <h1>{t('title')}</h1>
-
+            Future of Travel
+            
           </h3>
           <p 
             className="subheading-paragprah text-white/95  md:max-w-lg mx-auto mb-8"

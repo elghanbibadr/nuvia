@@ -1,6 +1,16 @@
 {
-  "HomePage": {
-    "title": "Welcome",
-    "description": "This is my website"
+  "Navigation": {
+    "home": "Home",
+    "problemAndSolution": "Problem & Solution",
+    "aiFeatures": "AI Features",
+    "benefits": "Benefits",
+    "roadmap": "Roadmap",
+    "join": "Join"
+  },
+  "Hero": {
+    "title": "NÜVIA",
+    "subtitle": "Future of Travel",
+    "description": "Experience the future of personalized, seamless travel. Nüvia's AI assembles your perfect journey and lets you book everything with one click",
+    "cta": "Join Waitlist Now"
   }
 }

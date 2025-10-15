@@ -2,14 +2,7 @@
 import React, { useState, useCallback } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
-
-const NAVIGATION_ITEMS = [
-  { name: 'Home', href: '', isActive: false },
-  { name: 'Problem & Solution', href: '#solution', isActive: false },
-  { name: 'AI Features', href: '#features', isActive: true },
-  { name: 'Benefits', href: '#benefits', isActive: false },
-  { name: 'Roadmap', href: '#roadmap', isActive: false }
-];
+import { useTranslations } from 'next-intl';
 
 const NuviaLogo = ({ className = "" }) => (
   <svg 
@@ -29,15 +22,19 @@ const NuviaLogo = ({ className = "" }) => (
   </svg>
 );
 
-const JoinButton = ({ className = "" }) => (
-  <Link href="/waitlist">
-    <button className={`btn btn-light ${className}`}>
-      Join
-    </button>
-  </Link>
-);
+const JoinButton = ({ className = "" }) => {
+  const t = useTranslations('Navigation');
+  
+  return (
+    <Link href="/waitlist">
+      <button className={`btn btn-light ${className}`}>
+        {t('join')}
+      </button>
+    </Link>
+  );
+};
 
-const NavigationLink = ({ item, onClick }) => {
+const NavigationLink = ({ item, onClick, label }) => {
   const handleClick = (e) => {
     e.preventDefault();
     const targetId = item.href.replace('#', '');
@@ -61,18 +58,27 @@ const NavigationLink = ({ item, onClick }) => {
   };
 
   return (
-    
-     <a href={item.href}
+    <a href={item.href}
       onClick={handleClick}
-      className={`relative text-sm text-white font-normal transition-colors duration-200 hover:text-gray-200 cursor-pointer`}
+      className={`relative text-sm text-nowrap text-white font-normal transition-colors duration-200 hover:text-gray-200 cursor-pointer`}
     >
-      {item.name}
+      {label}
     </a>
   );
 };
 
 const HeaderNavigation = () => {
+  const t = useTranslations('Navigation');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Navigation items with translation keys
+  const NAVIGATION_ITEMS = [
+    { key: 'home', href: '', isActive: false },
+    { key: 'problemAndSolution', href: '#solution', isActive: false },
+    { key: 'aiFeatures', href: '#features', isActive: true },
+    { key: 'benefits', href: '#benefits', isActive: false },
+    { key: 'roadmap', href: '#roadmap', isActive: false }
+  ];
 
   const toggleMobileMenu = useCallback(() => {
     setIsMobileMenuOpen(prev => !prev);
@@ -85,14 +91,18 @@ const HeaderNavigation = () => {
   return (
     <>
       {/* Desktop Header */}
-      <header className="hidden md:block w-[60%] max-w-4xl mx-auto">
+      <header className="hidden md:block w-[65%] max-w-4xl mx-auto">
         <div className="bg-[#0E141C80] backdrop-blur-sm rounded-full px-6 py-3">
           <div className="flex items-center justify-between">
             <NuviaLogo className='relative bottom-0.5' />
             
             <nav className="flex items-center space-x-8" role="navigation" aria-label="Main navigation">
               {NAVIGATION_ITEMS.map((item) => (
-                <NavigationLink key={item.name} item={item} />
+                <NavigationLink 
+                  key={item.key} 
+                  item={item}
+                  label={t(item.key)}
+                />
               ))}
             </nav>
 
@@ -150,9 +160,10 @@ const HeaderNavigation = () => {
               <nav className="p-6" role="navigation" aria-label="Mobile navigation">
                 <ul className="space-y-6">
                   {NAVIGATION_ITEMS.map((item) => (
-                    <li key={item.name}>
+                    <li key={item.key}>
                       <NavigationLink 
-                        item={item} 
+                        item={item}
+                        label={t(item.key)}
                         onClick={closeMobileMenu}
                       />
                     </li>
