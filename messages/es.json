@@ -118,5 +118,30 @@
         "description": "Pole enam mitme broneeringu žongleerimist, lõputute vahekaartide võrdlemist või koordineerimise pärast muretsemist. Nüvia hoolitseb kõige eest"
       }
     }
+  },
+  
+  "Waitlist": {
+    "header": "Koge Reisiplaneerimise Tulevikku. Kindlusta Oma Koht.",
+    "subheader": "Liitu tuhandete reisijatega, kes on valmis kogema AI-põhist reisiplaneerimist. Saa varajane juurdepääs, eksklusiivsed eelised ja ole osa reisirevolutsioonist. See on teie võimalus olla esimeste hulgas, kes lihtsustab oma seiklusi.",
+    "cta": "Liitu Ootenimekirjaga Kohe",
+    "features": {
+      "earlyAccess": {
+        "title": "Varajane Juurdepääs",
+        "description": "Ole esimeste hulgas, kes kogeb Nüvia revolutsioonilist AI reisiplaneerimise platvormi"
+      },
+      "exclusiveDiscounts": {
+        "title": "Eksklusiivsed Allahindlused",
+        "description": "Saa eripakkumised ja hinnad, mis on saadaval ainult ootenimekirja liikmetele"
+      },
+      "testingOpportunities": {
+        "title": "Testimise Võimalused",
+        "description": "Aita kujundada AI reisitehnoloogia tulevikku, andes tagasisidet uute funktsioonide kohta"
+      },
+      "prioritySupport": {
+        "title": "Prioriteetne Tugi",
+        "description": "Saa otsene juurdepääs meie pühendunud tugimeeskonnale mis tahes küsimuste või abi saamiseks"
+      }
+    }
   }
+
 }
