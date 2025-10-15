@@ -56,7 +56,7 @@ const features = [
 
 const TravelFeaturesSection = () => {
   return (
-    <div className='w-full my-20 '>
+    <div id='benefits' className='w-full my-20 '>
       {/* Header Section */}
       <div className="text-center mb-16">
         <h2 className="mb-4">
@@ -68,26 +68,26 @@ const TravelFeaturesSection = () => {
       </div>
        
       {/* Features Container */}
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-3 md:gap-6">
         
         {/* Top Row - 2 columns on mobile, flex on desktop */}
-        <div className="grid grid-cols-2 md:flex md:flex-row gap-6">
+        <div className="grid grid-cols-2 md:flex md:flex-row gap-2 md:gap-6">
           {/* Seamless Experience */}
-          <Card className="rounded-[32px] bg-[#18232D] p-6 flex flex-col md:flex-1">
+          <Card className="rounded-[32px] bg-[#18232D] p-2 md:p-6 flex flex-col md:flex-1">
             <div className="mx-auto mb-4">
               <Image src={features[0].icon} alt={features[0].title} width={30} height={30} />
             </div>
-            <h4 className='text-white !font-raleway text-lg font-semibold mb-3 text-center'>
+            <h4 className='text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0'>
               {features[0].title}
             </h4>
-            <p className='text-white/70 !font-raleway text-sm leading-relaxed text-center'>
+            <p className='text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1'>
               {features[0].description}
             </p>
           </Card>
 
           {/* Perfect Personalization */}
           <Card 
-            className="rounded-[32px] bg-[#18232D] p-6 flex flex-col md:w-[440px]"
+            className="rounded-[32px] bg-[#18232D] p-2 md:p-6 flex flex-col md:w-[440px]"
             style={{ 
               flexBasis: '440px',
               flexGrow: 0,
@@ -97,46 +97,46 @@ const TravelFeaturesSection = () => {
             <div className="mx-auto mb-4">
               <Image src={features[1].icon} alt={features[1].title} width={30} height={30} />
             </div>
-            <h4 className='text-white !font-raleway text-lg font-semibold mb-3 text-center'>
+            <h4 className='text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0'>
               {features[1].title}
             </h4>
-            <p className='text-white/70 !font-raleway text-sm leading-relaxed text-center'>
+            <p className='text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1'>
               {features[1].description}
             </p>
           </Card>
 
           {/* Guaranteed Coordination */}
-          <Card className="rounded-[32px] bg-[#18232D] p-6 flex flex-col md:flex-1">
+          <Card className="rounded-[32px] bg-[#18232D] p-2 md:p-6 flex flex-col md:flex-1">
             <div className="mx-auto mb-4">
               <Image src={features[3].icon} alt={features[3].title} width={30} height={30} />
             </div>
-            <h4 className='text-white !font-raleway text-lg font-semibold mb-3 text-center'>
+            <h4 className='text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0'>
               {features[3].title}
             </h4>
-            <p className='text-white/70 !font-raleway text-sm leading-relaxed text-center'>
+            <p className='text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1'>
               {features[3].description}
             </p>
           </Card>
 
           {/* 24/7 AI Support */}
-          <Card className="rounded-[32px] bg-[#18232D] p-6 flex flex-col md:flex-1">
+          <Card className="rounded-[32px] bg-[#18232D] p-2 md:p-6 flex flex-col md:flex-1">
             <div className="mx-auto mb-4">
               <Image src={features[2].icon} alt={features[2].title} width={30} height={30} />
             </div>
-            <h4 className='text-white !font-raleway text-lg font-semibold mb-3 text-center'>
+            <h4 className='text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0'>
               {features[2].title}
             </h4>
-            <p className='text-white/70 !font-raleway text-sm leading-relaxed text-center'>
+            <p className='text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1'>
               {features[2].description}
             </p>
           </Card>
         </div>
 
         {/* Bottom Row - 2 columns on mobile, flex on desktop */}
-        <div className="grid grid-cols-2 md:flex md:flex-row gap-6">
+        <div className="grid grid-cols-2 md:flex md:flex-row gap-2 md:gap-6">
           {/* Save Massive Time */}
           <Card 
-            className="rounded-[32px] bg-[#18232D] p-6 flex flex-col md:w-auto"
+            className="rounded-[32px] bg-[#18232D] p-2 md:p-6 flex flex-col md:w-auto"
             style={{ 
               flexBasis: '280px',
               flexGrow: 0,
@@ -146,30 +146,30 @@ const TravelFeaturesSection = () => {
             <div className="mx-auto mb-4">
               <Image src={features[4].icon} alt={features[4].title} width={30} height={30} />
             </div>
-            <h4 className='text-white !font-raleway text-lg font-semibold mb-3 text-center'>
+            <h4 className='text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0'>
               {features[4].title}
             </h4>
-            <p className='text-white/70 !font-raleway text-sm leading-relaxed text-center'>
+            <p className='text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1'>
               {features[4].description}
             </p>
           </Card>
 
           {/* Save Significant Money */}
-          <Card className="rounded-[32px] bg-[#18232D] p-6 flex flex-col md:flex-grow">
+          <Card className="rounded-[32px] bg-[#18232D] p-2 md:p-6 flex flex-col md:flex-grow">
             <div className="mx-auto mb-4">
               <Image src={features[5].icon} alt={features[5].title} width={30} height={30} />
             </div>
-            <h4 className='text-white !font-raleway text-lg font-semibold mb-3 text-center'>
+            <h4 className='text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0'>
               {features[5].title}
             </h4>
-            <p className='text-white/70 !font-raleway text-sm leading-relaxed text-center'>
+            <p className='text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1'>
               {features[5].description}
             </p>
           </Card>
 
           {/* Eliminate Stress - Full width on mobile, fixed width on desktop */}
           <Card 
-            className="rounded-[32px] bg-[#18232D] p-6 flex flex-col col-span-2 md:col-span-1 md:w-auto"
+            className="rounded-[32px] bg-[#18232D] p-2 md:p-6 flex flex-col col-span-2 md:col-span-1 md:w-auto"
             style={{ 
               flexBasis: '440px',
               flexGrow: 0,
@@ -179,10 +179,10 @@ const TravelFeaturesSection = () => {
             <div className="mx-auto mb-4">
               <Image src={features[6].icon} alt={features[6].title} width={30} height={30} />
             </div>
-            <h4 className='text-white !font-raleway text-lg font-semibold mb-3 text-center'>
+            <h4 className='text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0'>
               {features[6].title}
             </h4>
-            <p className='text-white/70 !font-raleway text-sm leading-relaxed text-center'>
+            <p className='text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1'>
               {features[6].description}
             </p>
           </Card>

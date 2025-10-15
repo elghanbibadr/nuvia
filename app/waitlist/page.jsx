@@ -79,17 +79,7 @@ const WaitlistPage = () => {
         throw new Error('Failed to send email notification');
       }
 
-      // Save to database (optional - won't block success if it fails)
-      try {
-        await fetch('/api/waitlist', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData),
-        });
-      } catch (dbError) {
-        console.error('Database save failed:', dbError);
-        // Continue anyway - email was sent successfully
-      }
+
 
       // Show success message
       setSubmitSuccess(true);

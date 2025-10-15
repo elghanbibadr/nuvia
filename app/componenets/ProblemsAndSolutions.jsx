@@ -116,8 +116,8 @@ const itemVariants = {
 
 // Updated Section component with fixed card heights
 const Section = ({ title, data, variant, gradientStyle }) => (
-  <div 
-    className=' rounded-[32px] p-6' 
+  <div id='solution'
+    className=' rounded-[32px] p-2 md:p-6' 
     style={{ background: gradientStyle }}
   >
     <h3 className="text-3xl font-bold text-white mb-8 text-center !font-raleway">
@@ -127,7 +127,7 @@ const Section = ({ title, data, variant, gradientStyle }) => (
     <div className="space-y-4">
       {/* First Row */}
       <motion.div 
-        className="grid grid-cols-2 gap-4 "
+        className="grid grid-cols-2 gap-2 md:gap-4 "
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
@@ -135,15 +135,15 @@ const Section = ({ title, data, variant, gradientStyle }) => (
       >
         {data.slice(0, 2).map((item) => (
           <motion.div key={item.id} variants={itemVariants}>
-            <Card className="rounded-[32px] !pt-6 justify-center items-center  bg-white/5 h-[290px] md:h-[210px] self-stretch flex flex-col">
+            <Card className="rounded-[32px] !pt-6 justify-center items-center  bg-white/5 h-[200px] self-stretch flex flex-col">
               <div className=" mx-auto mb-4 flex items-center justify-center flex-shrink-0">
-                <Image src={item.icon.src} height={40} width={40} alt={item.title} />
+                <Image src={item.icon.src} height={30} width={30} alt={item.title} />
               </div>
               <div className="flex-1 flex flex-col">
-                <h4 className="text-white !font-raleway text-lg font-semibold mb-3 flex-shrink-0">
+                <h4 className="text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0">
                   {item.title}
                 </h4>
-                <p className="text-white/70 !font-raleway text-sm leading-relaxed flex-1">
+                <p className="text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1">
                   {item.description}
                 </p>
               </div>
@@ -162,15 +162,15 @@ const Section = ({ title, data, variant, gradientStyle }) => (
       >
         {data.slice(2, 4).map((item) => (
           <motion.div key={item.id} variants={itemVariants}>
-            <Card className="rounded-[32px] !pt-6 justify-center items-center  bg-white/5 h-[290px] md:h-[210px] self-stretch flex flex-col">
+            <Card className="rounded-[32px] !pt-6 justify-center items-center  bg-white/5 h-[200px] self-stretch flex flex-col">
                <div className=" mx-auto mb-4 flex items-center justify-center flex-shrink-0">
-                <Image src={item.icon.src} height={40} width={40} alt={item.title} />
+                <Image src={item.icon.src} height={30} width={30} alt={item.title} />
               </div>
               <div className="flex-1 flex flex-col">
-                <h4 className="text-white !font-raleway text-lg font-semibold mb-3 flex-shrink-0">
+                <h4 className="text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0">
                   {item.title}
                 </h4>
-                <p className="text-white/70 !font-raleway text-sm leading-relaxed flex-1">
+                <p className="text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1">
                   {item.description}
                 </p>
               </div>
@@ -188,18 +188,18 @@ const Section = ({ title, data, variant, gradientStyle }) => (
         viewport={{ once: true }}
       >
         <motion.div variants={itemVariants} className="w-full max-w-md">
-            <Card className="rounded-[32px] !pt-6 justify-center items-center  bg-white/5 h-[290px] md:h-[200px] self-stretch flex flex-col">
+            <Card className="rounded-[32px] !pt-6 justify-center items-center  bg-white/5 h-[200px] self-stretch flex flex-col">
               <div className=" mx-auto mb-4 flex items-center justify-center flex-shrink-0">
-                <Image src={data[4].icon.src} height={40} width={40} alt={data[4].title} />
+                <Image src={data[4].icon.src} height={30} width={30} alt={data[4].title} />
               </div>
-            <div className="flex-1 flex flex-col">
-              <h4 className="text-white !font-raleway text-lg font-semibold mb-3 flex-shrink-0">
-                {data[4].title}
-              </h4>
-              <p className="text-white/70 !font-raleway md:w-[80%] md:mx-auto text-sm leading-relaxed flex-1">
-                {data[4].description}
-              </p>
-            </div>
+          <div className="flex-1 flex flex-col">
+                <h4 className="text-white !font-raleway text-sm sm:text-lg font-semibold mb-3 flex-shrink-0">
+                  {data[4].title}
+                </h4>
+                <p className="text-white/70 !font-raleway text-xs sm:text-sm leading-relaxed flex-1">
+                  {data[4].description}
+                </p>
+              </div>
           </Card>
         </motion.div>
       </motion.div>
@@ -238,7 +238,7 @@ const ProblemsAndSolutions = () => {
           viewport={{ once: true }}
           className="relative"
         >
-          <div className="grid lg:grid-cols-2 gap-6 relative">
+          <div className="grid lg:grid-cols-2 gap-2 md:gap-6 relative">
             
             {/* Problems Section */}
             <Section 

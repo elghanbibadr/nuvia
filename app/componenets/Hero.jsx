@@ -37,7 +37,7 @@ const Hero = () => {
   const textOpacity = useTransform(scrollY, [400, 700], [0, 1]);
   
   return (
-    <div className="relative">
+    <div id='Home' className="relative">
       {/* Parallax Hero Section */}
       <div 
         ref={containerRef}

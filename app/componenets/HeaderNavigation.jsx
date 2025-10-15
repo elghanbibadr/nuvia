@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
 const NAVIGATION_ITEMS = [
-  { name: 'Home', href: '#home', isActive: false },
+  { name: 'Home', href: '', isActive: false },
   { name: 'Problem & Solution', href: '#solution', isActive: false },
   { name: 'AI Features', href: '#features', isActive: true },
   { name: 'Benefits', href: '#benefits', isActive: false },
@@ -37,15 +37,39 @@ const JoinButton = ({ className = "" }) => (
   </Link>
 );
 
-const NavigationLink = ({ item, onClick }) => (
-  <a
-    href={item.href}
-    onClick={onClick}
-    className={`relative text-sm text-white font-normal transition-colors duration-200 hover:text-gray-200`}
-  >
-    {item.name}
-  </a>
-);
+const NavigationLink = ({ item, onClick }) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    const targetId = item.href.replace('#', '');
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      // Smooth scroll to the section
+      targetElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+      
+      // Update URL without page reload
+      window.history.pushState(null, '', item.href);
+    }
+    
+    // Close mobile menu if open
+    if (onClick) {
+      onClick();
+    }
+  };
+
+  return (
+    
+     <a href={item.href}
+      onClick={handleClick}
+      className={`relative text-sm text-white font-normal transition-colors duration-200 hover:text-gray-200 cursor-pointer`}
+    >
+      {item.name}
+    </a>
+  );
+};
 
 const HeaderNavigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -92,7 +116,7 @@ const HeaderNavigation = () => {
 
             <NuviaLogo className="flex-shrink-0" />
 
-            <JoinButton className="px-4   " />
+            <JoinButton className="px-4" />
           </div>
         </div>
       </header>

@@ -15,6 +15,7 @@ export async function POST(request) {
       );
     }
 
+    console.log('api key',process.env.RESEND_API_KEY)
     // Send email using Resend
     const { data, error } = await resend.emails.send({
       from: 'noreply@nuvia.me', // Free tier: use this default sender

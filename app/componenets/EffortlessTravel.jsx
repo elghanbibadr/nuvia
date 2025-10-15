@@ -10,7 +10,7 @@ import intersactionmobile from "@/public/intersactionmobile.svg"
 
 const EffortlessTravel = () => {
   return (
-   <div className='w-full my-20 px-4'>
+   <div id="features" className='w-full my-20 px-4'>
      <div className='max-w-[1792px] mx-auto md:grid md:grid-cols-4 grid-rows- gap-4 items-stretch'>
        
        {/* LEFT COLUMN - 3 cards stacked */}
