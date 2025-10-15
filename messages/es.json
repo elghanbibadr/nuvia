@@ -84,5 +84,39 @@
     "batch": "Partii",
     "realtime": "Reaalajas",
     "diagramAlt": "NUVIA Integratsiooni Skeem"
+  },
+  "Benefits": {
+    "header": "Rohkem Aega Avastamiseks, Vähem Aega Planeerimiseks. Reisi Ilma Keerukuseta.",
+    "subheader": "Nüvia eemaldab reisiplaneerimise stressi, võimaldades teil keskenduda oma reisi nautimisele",
+    "features": {
+      "seamlessExperience": {
+        "title": "Sujuv Kogemus",
+        "description": "Viisaabist kohalikku transporti, iga aspekt teie reisist kulgeb sujuvalt läbi meie intelligentse AI poolt korraldatud"
+      },
+      "perfectPersonalization": {
+        "title": "Täiuslik Personaliseerimine",
+        "description": "Iga reis on ainulaadselt kohandatud teie konkreetsete eelistuste, reisistiili ja eelarve järgi, tagades kogemuse, mis tõeliselt resoneerub teiega"
+      },
+      "aiSupport": {
+        "title": "24/7 AI Tugi",
+        "description": "Teie AI Assistent on alati saadaval muudatuste, küsimuste või hädaabi jaoks, pakkudes võrratut meelerahu"
+      },
+      "guaranteedCoordination": {
+        "title": "Garanteeritud Koordineerimine",
+        "description": "Kõik broneeringud on sünkroniseeritud ja hallatud Nüvia poolt, nii et te ei pea kunagi muretsema oma maa peale planeerimise pärast"
+      },
+      "saveTime": {
+        "title": "Säästa Tohutult Aega",
+        "description": "Planeeri keerulisi mitme sihtkohaga reise minutitega päevade või nädalate asemel. Meie AI teeb raske töö ära"
+      },
+      "saveMoney": {
+        "title": "Säästa Märkimisväärselt Raha",
+        "description": "AI optimeerimine ja meie koondatud ostujõud vähendavad kulusid kuni 40% teie üldistest reisikuludest"
+      },
+      "eliminateStress": {
+        "title": "Kõrvalda Stress",
+        "description": "Pole enam mitme broneeringu žongleerimist, lõputute vahekaartide võrdlemist või koordineerimise pärast muretsemist. Nüvia hoolitseb kõige eest"
+      }
+    }
   }
 }

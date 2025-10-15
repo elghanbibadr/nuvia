@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Card from './Card';
@@ -8,62 +9,72 @@ import coordination from "@/public/coordination.png"
 import timing from "@/public/timing.png"
 import savemoney from "@/public/savemoney.png"
 import eliminatestress from "@/public/eliminatestress.png"
-
-const features = [
-  {
-    id: 1,
-    icon: earth,
-    title: "Seamless Experience",
-    description: "From visa assistance to local transport, every aspect of your trip flows seamlessly through one orchestrated by our intelligent AI"
-  },
-  {
-    id: 2,
-    icon: perfectperso,
-    title: "Perfect Personalization", 
-    description: "Every trip is uniquely tailored to your specific preferences, travel style, and budget, ensuring an experience that truly resonates with you"
-  },
-  {
-    id: 3,
-    icon: support,
-    title: "24/7 AI Support",
-    description: "Your AI Assistant is available anytime for changes, questions, or emergency assistance, providing unparalleled peace of mind"
-  },
-  {
-    id: 4,
-    icon: coordination,
-    title: "Guaranteed Coordination",
-    description: "All bookings are synchronized and managed by Nüvia so you never have to worry about planning your time on the ground"
-  },
-  {
-    id: 5,
-    icon: timing,
-    title: "Save Massive Time",
-    description: "Plan complex multi-destination trips in minutes instead of days or weeks. Our AI handles the heavy lifting"
-  },
-  {
-    id: 6,
-    icon: savemoney,
-    title: "Save Significant Money",
-    description: "AI optimization and our aggregated purchasing power reduce costs by up to 40% on your overall travel expenses"
-  },
-  {
-    id: 7,
-    icon: eliminatestress,
-    title: "Eliminate Stress",
-    description: "No more juggling multiple bookings, comparing endless tabs, or worrying about coordination. Nüvia takes care of everything"
-  }
-];
+import { useTranslations } from 'next-intl';
 
 const TravelFeaturesSection = () => {
+  const t = useTranslations('Benefits');
+  
+  const features = [
+    {
+      id: 1,
+      icon: earth,
+      key: 'seamlessExperience',
+      title: t('features.seamlessExperience.title'),
+      description: t('features.seamlessExperience.description')
+    },
+    {
+      id: 2,
+      icon: perfectperso,
+      key: 'perfectPersonalization',
+      title: t('features.perfectPersonalization.title'),
+      description: t('features.perfectPersonalization.description')
+    },
+    {
+      id: 3,
+      icon: support,
+      key: 'aiSupport',
+      title: t('features.aiSupport.title'),
+      description: t('features.aiSupport.description')
+    },
+    {
+      id: 4,
+      icon: coordination,
+      key: 'guaranteedCoordination',
+      title: t('features.guaranteedCoordination.title'),
+      description: t('features.guaranteedCoordination.description')
+    },
+    {
+      id: 5,
+      icon: timing,
+      key: 'saveTime',
+      title: t('features.saveTime.title'),
+      description: t('features.saveTime.description')
+    },
+    {
+      id: 6,
+      icon: savemoney,
+      key: 'saveMoney',
+      title: t('features.saveMoney.title'),
+      description: t('features.saveMoney.description')
+    },
+    {
+      id: 7,
+      icon: eliminatestress,
+      key: 'eliminateStress',
+      title: t('features.eliminateStress.title'),
+      description: t('features.eliminateStress.description')
+    }
+  ];
+
   return (
-    <div id='benefits' className='w-full my-20 '>
+    <div id='benefits' className='w-full my-28 '>
       {/* Header Section */}
       <div className="text-center mb-16">
-        <h2 className="mb-4">
-          More Time Exploring,* Less Time Planning. Travel Without Complexity.
+        <h2 className="mb-4 max-w-5xl text-center mx-auto">
+          {t('header')}
         </h2>
         <p className="subheading-paragprah text-[#FFFFFFCC] md:w-[70%] text-center mx-auto">
-          Nüvia removes travel planning stress, letting you focus on enjoying your journey
+          {t('subheader')}
         </p>
       </div>
        

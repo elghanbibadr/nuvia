@@ -84,5 +84,39 @@
     "batch": "Batch",
     "realtime": "Realtime",
     "diagramAlt": "NUVIA Integration Diagram"
+  },
+  "Benefits": {
+    "header": "More Time Exploring, Less Time Planning. Travel Without Complexity.",
+    "subheader": "Nüvia removes travel planning stress, letting you focus on enjoying your journey",
+    "features": {
+      "seamlessExperience": {
+        "title": "Seamless Experience",
+        "description": "From visa assistance to local transport, every aspect of your trip flows seamlessly through one orchestrated by our intelligent AI"
+      },
+      "perfectPersonalization": {
+        "title": "Perfect Personalization",
+        "description": "Every trip is uniquely tailored to your specific preferences, travel style, and budget, ensuring an experience that truly resonates with you"
+      },
+      "aiSupport": {
+        "title": "24/7 AI Support",
+        "description": "Your AI Assistant is available anytime for changes, questions, or emergency assistance, providing unparalleled peace of mind"
+      },
+      "guaranteedCoordination": {
+        "title": "Guaranteed Coordination",
+        "description": "All bookings are synchronized and managed by Nüvia so you never have to worry about planning your time on the ground"
+      },
+      "saveTime": {
+        "title": "Save Massive Time",
+        "description": "Plan complex multi-destination trips in minutes instead of days or weeks. Our AI handles the heavy lifting"
+      },
+      "saveMoney": {
+        "title": "Save Significant Money",
+        "description": "AI optimization and our aggregated purchasing power reduce costs by up to 40% on your overall travel expenses"
+      },
+      "eliminateStress": {
+        "title": "Eliminate Stress",
+        "description": "No more juggling multiple bookings, comparing endless tabs, or worrying about coordination. Nüvia takes care of everything"
+      }
+    }
   }
 }
