@@ -378,5 +378,52 @@
       "email": "Email: contact@nuvia.me",
       "address": "Address: Ahtri tn 12, Tallinn 15551, Estonia"
     }
+  },
+  "Cookies": {
+    "back": "Back",
+    "title": "Cookies Policy – NÜVIA OÜ (ePrivacy & GDPR Compliant)",
+    "effectiveDate": "Effective Date:",
+    "effectiveDateValue": "22 September 2025",
+    
+    "section1": {
+      "title": "1. What Are Cookies?",
+      "paragraph": "Cookies are small text files stored on your device when you visit a website. They help us improve functionality, remember user preferences, and collect analytical/performance data."
+    },
+    
+    "section2": {
+      "title": "2. Types of Cookies Used",
+      "item1": "Essential cookies: required for basic functionality",
+      "item2": "Functional cookies: remember user preferences",
+      "item3": "Performance cookies: measure website performance",
+      "item4": "Analytics/Advertising cookies: track user activity for analytics and advertising purposes"
+    },
+    
+    "section3": {
+      "title": "3. Lawful Use of Cookies",
+      "intro": "We comply with:",
+      "item1": "Directive 2002/58/EC (ePrivacy Directive)",
+      "item2": "GDPR Article 6 and Article 7",
+      "paragraph": "Non-essential cookies are only placed after obtaining your clear, informed, and freely given consent via a cookie banner."
+    },
+    
+    "section4": {
+      "title": "4. Managing Cookies",
+      "intro": "You may control your cookie preferences:",
+      "item1": "Via our cookie banner",
+      "item2": "Through your browser settings",
+      "item3": "By withdrawing consent at any time"
+    },
+    
+    "section5": {
+      "title": "5. Third-Party Cookies",
+      "paragraph": "We may use third-party services (e.g., Google Analytics). These providers may place cookies subject to their own privacy policies."
+    },
+    
+    "section6": {
+      "title": "6. Contact",
+      "intro": "For questions about cookie usage:",
+      "email": "Email: contact@nuvia.me",
+      "address": "Address: Ahtri tn 12, Tallinn 15551, Estonia"
+    }
   }
 }

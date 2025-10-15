@@ -377,6 +377,52 @@
       "email": "E-post: contact@nuvia.me",
       "address": "Aadress: Ahtri tn 12, Tallinn 15551, Eesti"
     }
+  },
+  "Cookies": {
+    "back": "Tagasi",
+    "title": "Küpsiste Poliitika – NÜVIA OÜ (ePrivacy ja GDPR Nõuetele Vastav)",
+    "effectiveDate": "Jõustumiskuupäev:",
+    "effectiveDateValue": "22. september 2025",
+    
+    "section1": {
+      "title": "1. Mis on Küpsised?",
+      "paragraph": "Küpsised on väikesed tekstifailid, mis salvestatakse teie seadmesse veebisaidi külastamisel. Need aitavad meil parandada funktsionaalsust, meeles pidada kasutaja eelistusi ja koguda analüütilist/jõudluse andmeid."
+    },
+    
+    "section2": {
+      "title": "2. Kasutatavad Küpsiste Tüübid",
+      "item1": "Vajalikud küpsised: nõutud põhifunktsionaalsuse jaoks",
+      "item2": "Funktsionaalsed küpsised: meeles peavad kasutaja eelistusi",
+      "item3": "Jõudluse küpsised: mõõdavad veebilehe jõudlust",
+      "item4": "Analüütika/Reklaamiküpsised: jälgivad kasutaja tegevust analüütika ja reklaamieesmärkidel"
+    },
+    
+    "section3": {
+      "title": "3. Küpsiste Seaduslik Kasutamine",
+      "intro": "Järgime:",
+      "item1": "Direktiiv 2002/58/EÜ (ePrivacy Direktiiv)",
+      "item2": "GDPR Artikkel 6 ja Artikkel 7",
+      "paragraph": "Mittevajalikke küpsiseid paigutatakse ainult pärast teie selge, teadliku ja vabalt antud nõusoleku saamist küpsiste ribalehe kaudu."
+    },
+    
+    "section4": {
+      "title": "4. Küpsiste Haldamine",
+      "intro": "Võite kontrollida oma küpsiste eelistusi:",
+      "item1": "Meie küpsiste ribalehe kaudu",
+      "item2": "Oma brauseri seadete kaudu",
+      "item3": "Nõusoleku tagasivõtmisega igal ajal"
+    },
+    
+    "section5": {
+      "title": "5. Kolmandate Osapoolte Küpsised",
+      "paragraph": "Võime kasutada kolmandate osapoolte teenuseid (nt Google Analytics). Need pakkujad võivad paigutada küpsiseid vastavalt oma privaatsuspoliitikale."
+    },
+    
+    "section6": {
+      "title": "6. Kontakt",
+      "intro": "Küpsiste kasutamise kohta küsimuste korral:",
+      "email": "E-post: contact@nuvia.me",
+      "address": "Aadress: Ahtri tn 12, Tallinn 15551, Eesti"
+    }
   }
-
 }
