@@ -1,7 +1,11 @@
+'use client'
 import React from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const TermsAndConditions = () => {
+  const t = useTranslations('Terms');
+
   return (
     <div className="min-h-screen bg-[#0F1419] text-white">
       {/* Back Button */}
@@ -10,232 +14,232 @@ const TermsAndConditions = () => {
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
-          Back
+          {t('back')}
         </Link>
       </div>
 
       {/* Main Content */}
       <div className="px-6 max-w-4xl mx-auto lg:px-12 py-12">
-        <h3 className=" mb-8">Terms & Conditions for NÜVIA OÜ</h3>
+        <h3 className=" mb-8">{t('title')}</h3>
 
         {/* Header Info */}
         <div className="mb-12 space-y-4">
           <div>
-            <p className="text-[#FFFFFFCC] font-semibold">Effective Date:</p>
-            <p className="text-[#FFFFFFCC]">22 September 2025</p>
+            <p className="text-[#FFFFFFCC] font-semibold">{t('effectiveDate')}</p>
+            <p className="text-[#FFFFFFCC]">{t('effectiveDateValue')}</p>
           </div>
           
           <div>
-            <p className="text-[#FFFFFFCC] font-semibold">Company:</p>
-            <p className="text-[#FFFFFFCC]">NÜVIA OÜ ("NÜVIA", "we", "us", "our")</p>
+            <p className="text-[#FFFFFFCC] font-semibold">{t('company')}</p>
+            <p className="text-[#FFFFFFCC]">{t('companyValue')}</p>
           </div>
           
           <div>
-            <p className="text-[#FFFFFFCC] font-semibold">Registration Number:</p>
-            <p className="text-[#FFFFFFCC]">17301668</p>
+            <p className="text-[#FFFFFFCC] font-semibold">{t('registrationNumber')}</p>
+            <p className="text-[#FFFFFFCC]">{t('registrationNumberValue')}</p>
           </div>
           
           <div>
-            <p className="text-[#FFFFFFCC] font-semibold">Registered Address:</p>
-            <p className="text-[#FFFFFFCC]">Ahtri tn 12, Tallinn, Estonia, 15551</p>
+            <p className="text-[#FFFFFFCC] font-semibold">{t('registeredAddress')}</p>
+            <p className="text-[#FFFFFFCC]">{t('registeredAddressValue')}</p>
           </div>
         </div>
 
         <p className="text-[#FFFFFFCC] mb-12">
-          This document, along with our Privacy Policy and Cookie Policy, governs the use of all digital services, platforms, and travel arrangements offered by NÜVIA OÜ, in accordance with EU laws and GDPR compliance.
+          {t('intro')}
         </p>
 
         {/* Section 1 */}
         <section className="mb-12">
-          <h3 className=" mb-4">1. Acceptance of Terms</h3>
+          <h3 className=" mb-4">{t('section1.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            These Terms and Conditions ("Terms") govern your access to and use of all digital platforms, applications, and travel services provided by NÜVIA. By accessing or using any of our services, you agree to these Terms. If you do not agree, do not use our services.
+            {t('section1.paragraph1')}
           </p>
           <p className="text-[#FFFFFFCC]">
-            This contract is concluded electronically and becomes legally binding upon your use of our services, as per EU Regulation (EU) No 910/2014 on electronic identification and trust services (eIDAS).
+            {t('section1.paragraph2')}
           </p>
         </section>
 
         {/* Section 2 */}
         <section className="mb-12">
-          <h3 className=" mb-4">2. Our Services</h3>
+          <h3 className=" mb-4">{t('section2.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            NÜVIA is a travel technology platform based in Estonia, operating under EU consumer protection and digital services laws. We assist users in planning, customizing, and booking travel services. Our offerings include:
+            {t('section2.intro')}
           </p>
           <ul className="space-y-2 ml-6">
-            <li className="text-[#FFFFFFCC]">• AI-powered planning and trip generation based on user preferences.</li>
-            <li className="text-[#FFFFFFCC]">• Booking of travel services (flights, accommodations, insurance, transfers, excursions) provided by third parties.</li>
-            <li className="text-[#FFFFFFCC]">• Centralized access to travel documents and itinerary management.</li>
-            <li className="text-[#FFFFFFCC]">• Service aggregation and optional integration into Linked Travel Arrangements (LTAs).</li>
+            <li className="text-[#FFFFFFCC]">• {t('section2.item1')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section2.item2')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section2.item3')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section2.item4')}</li>
           </ul>
         </section>
 
         {/* Section 3 */}
         <section className="mb-12">
-          <h3 className=" mb-4">3. Linked Travel Arrangements (LTA)</h3>
+          <h3 className=" mb-4">{t('section3.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            As per Directive (EU) 2015/2302, some bookings made on our platform may constitute Linked Travel Arrangements (LTA), which are not package holidays.
+            {t('section3.intro')}
           </p>
           
-          <p className="text-[#FFFFFFCC] font-semibold mb-3">Characteristics of an LTA:</p>
+          <p className="text-[#FFFFFFCC] font-semibold mb-3">{t('section3.characteristicsTitle')}</p>
           <ul className="space-y-2 ml-6 mb-4">
-            <li className="text-[#FFFFFFCC]">• You purchase at least two different travel services (e.g., hotel and flight) for the same trip.</li>
-            <li className="text-[#FFFFFFCC]">• Services are booked under separate contracts.</li>
-            <li className="text-[#FFFFFFCC]">• NÜVIA facilitates the booking of the second service within 24 hours via a targeted interface.</li>
+            <li className="text-[#FFFFFFCC]">• {t('section3.characteristic1')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section3.characteristic2')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section3.characteristic3')}</li>
           </ul>
 
-          <p className="text-[#FFFFFFCC] font-semibold mb-3">Consumer Protections:</p>
+          <p className="text-[#FFFFFFCC] font-semibold mb-3">{t('section3.protectionsTitle')}</p>
           <ul className="space-y-2 ml-6">
-            <li className="text-[#FFFFFFCC]">• Limited insolvency protection applies to the travel services directly booked through NÜVIA.</li>
-            <li className="text-[#FFFFFFCC]">• You will be informed at checkout whether your combination constitutes an LTA.</li>
-            <li className="text-[#FFFFFFCC]">• LTAs do not offer the same rights to modification, refunds, or assistance as package holidays.</li>
+            <li className="text-[#FFFFFFCC]">• {t('section3.protection1')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section3.protection2')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section3.protection3')}</li>
           </ul>
         </section>
 
         {/* Section 4 */}
         <section className="mb-12">
-          <h3 className=" mb-4">4. User Eligibility</h3>
+          <h3 className=" mb-4">{t('section4.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            You must be at least 18 years old and have legal capacity under applicable national laws to use our services.
+            {t('section4.paragraph1')}
           </p>
           <p className="text-[#FFFFFFCC]">
-            Under EU consumer law (Directive 2011/83/EU), minors may use the service only with the verifiable consent of a parent or legal guardian.
+            {t('section4.paragraph2')}
           </p>
         </section>
 
         {/* Section 5 */}
         <section className="mb-12">
-          <h3 className=" mb-4">5. Account and Security</h3>
-          <p className="text-[#FFFFFFCC] mb-4">You are responsible for:</p>
+          <h3 className=" mb-4">{t('section5.title')}</h3>
+          <p className="text-[#FFFFFFCC] mb-4">{t('section5.intro')}</p>
           <ul className="space-y-2 ml-6 mb-4">
-            <li className="text-[#FFFFFFCC]">• Providing accurate and complete registration data.</li>
-            <li className="text-[#FFFFFFCC]">• Securing your credentials.</li>
-            <li className="text-[#FFFFFFCC]">• Notifying us of unauthorized access.</li>
+            <li className="text-[#FFFFFFCC]">• {t('section5.item1')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section5.item2')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section5.item3')}</li>
           </ul>
           <p className="text-[#FFFFFFCC]">
-            You are liable for all actions conducted under your account unless proven otherwise under applicable security provisions (e.g., GDPR Article 32).
+            {t('section5.paragraph')}
           </p>
         </section>
 
         {/* Section 6 */}
         <section className="mb-12">
-          <h3 className=" mb-4">6. Booking and Payment</h3>
+          <h3 className=" mb-4">{t('section6.title')}</h3>
           <ul className="space-y-2 ml-6">
-            <li className="text-[#FFFFFFCC]">• Prices and availability are subject to change until your booking is confirmed.</li>
-            <li className="text-[#FFFFFFCC]">• Charges may include applicable VAT, duties, or surcharges under Council Directive 2006/112/EC.</li>
-            <li className="text-[#FFFFFFCC]">• Payments are processed via compliant third-party providers (e.g., Stripe, Adyen) and protected via SSL encryption.</li>
-            <li className="text-[#FFFFFFCC]">• In case of LTAs, each travel service is subject to the payment terms of its provider.</li>
-            <li className="text-[#FFFFFFCC]">• Currency conversion fees may apply depending on your bank or card issuer.</li>
+            <li className="text-[#FFFFFFCC]">• {t('section6.item1')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section6.item2')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section6.item3')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section6.item4')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section6.item5')}</li>
           </ul>
         </section>
 
         {/* Section 7 */}
         <section className="mb-12">
-          <h3 className=" mb-4">7. Cancellations and Modifications</h3>
+          <h3 className=" mb-4">{t('section7.title')}</h3>
           <p className="text-[#FFFFFFCC]">
-            Each service provider defines their own cancellation and refund policy. Under EU law (Directive 2011/83/EU), your right of withdrawal may not apply to time-specific travel services or to flights and hotels with individual terms. Review each individual terms before confirming your booking.
+            {t('section7.paragraph')}
           </p>
         </section>
 
         {/* Section 8 */}
         <section className="mb-12">
-          <h3 className=" mb-4">8. Travel Documents and Requirements</h3>
+          <h3 className=" mb-4">{t('section8.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            You are solely responsible for ensuring that you meet entry and exit requirements for all countries you visit, including passports, visas, vaccination proofs, and insurance.
+            {t('section8.paragraph1')}
           </p>
           <p className="text-[#FFFFFFCC]">
-            NÜVIA is not responsible for denied boarding, visa refusals, or other administrative decisions by border or airline authorities. We may assist by offering relevant information platform-based services.
+            {t('section8.paragraph2')}
           </p>
         </section>
 
         {/* Section 9 */}
         <section className="mb-12">
-          <h3 className=" mb-4">9. Platform Use and Conduct</h3>
-          <p className="text-[#FFFFFFCC] mb-4">You agree not to:</p>
+          <h3 className=" mb-4">{t('section9.title')}</h3>
+          <p className="text-[#FFFFFFCC] mb-4">{t('section9.intro')}</p>
           <ul className="space-y-2 ml-6">
-            <li className="text-[#FFFFFFCC]">• Violate applicable EU or national laws.</li>
-            <li className="text-[#FFFFFFCC]">• Infringe on third-party intellectual property rights.</li>
-            <li className="text-[#FFFFFFCC]">• Use bots, scrapers, or automated systems without prior authorization.</li>
-            <li className="text-[#FFFFFFCC]">• Upload or transmit malicious software.</li>
-            <li className="text-[#FFFFFFCC]">• Attempt to interfere with service operation or infrastructure.</li>
+            <li className="text-[#FFFFFFCC]">• {t('section9.item1')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section9.item2')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section9.item3')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section9.item4')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section9.item5')}</li>
           </ul>
           <p className="text-[#FFFFFFCC] mt-4">
-            Violation may lead to account suspension or permanent termination of your access.
+            {t('section9.conclusion')}
           </p>
         </section>
 
         {/* Section 10 */}
         <section className="mb-12">
-          <h3 className=" mb-4">10. Intellectual Property</h3>
+          <h3 className=" mb-4">{t('section10.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            All trademarks, software, design, and content are the intellectual property of NÜVIA OÜ or its licensors and are protected under the Estonian Copyright Act and EU Intellectual Property directives (e.g., Directive 2001/29/EC).
+            {t('section10.paragraph1')}
           </p>
           <p className="text-[#FFFFFFCC]">
-            Unauthorized reproduction or commercial use is prohibited.
+            {t('section10.paragraph2')}
           </p>
         </section>
 
         {/* Section 11 */}
         <section className="mb-12">
-          <h3 className=" mb-4">11. Third-party Services and Liability</h3>
+          <h3 className=" mb-4">{t('section11.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            NÜVIA facilitates access to third-party services but does not act as an agent or principal in those services, unless expressly stated.
+            {t('section11.paragraph1')}
           </p>
           <p className="text-[#FFFFFFCC]">
-            Disputes, refunds, or performance claims must be directed to the relevant service provider in line with Regulation (EC) No 261/2004 (for flights) or applicable national contract laws.
+            {t('section11.paragraph2')}
           </p>
         </section>
 
         {/* Section 12 */}
         <section className="mb-12">
-          <h3 className=" mb-4">12. Limitation of Liability</h3>
+          <h3 className=" mb-4">{t('section12.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            To the maximum extent permitted by EU and Estonian law, NÜVIA shall not be liable for:
+            {t('section12.intro')}
           </p>
           <ul className="space-y-2 ml-6 mb-4">
-            <li className="text-[#FFFFFFCC]">• Indirect profits, reputational or consequential damages.</li>
-            <li className="text-[#FFFFFFCC]">• Delays or failures caused by third-party providers or force majeure.</li>
-            <li className="text-[#FFFFFFCC]">• Loss of data or access disruptions beyond our control.</li>
+            <li className="text-[#FFFFFFCC]">• {t('section12.item1')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section12.item2')}</li>
+            <li className="text-[#FFFFFFCC]">• {t('section12.item3')}</li>
           </ul>
           <p className="text-[#FFFFFFCC] mb-4">
-            Our liability for claims related to our services is capped at the total amount paid by you in the past 12 months.
+            {t('section12.paragraph1')}
           </p>
           <p className="text-[#FFFFFFCC]">
-            This clause does not limit liability for death or personal injury caused by negligence, fraud, or breach of mandatory consumer protections.
+            {t('section12.paragraph2')}
           </p>
         </section>
 
         {/* Section 13 */}
         <section className="mb-12">
-          <h3 className=" mb-4">13. Changes to the Terms</h3>
+          <h3 className=" mb-4">{t('section13.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            We reserve the right to amend these Terms in line with changes to applicable legislation or our services. Material changes will be communicated via email or in-app notification at least 14 days prior to taking effect.
+            {t('section13.paragraph1')}
           </p>
           <p className="text-[#FFFFFFCC]">
-            Continued use of our services after the effective date will constitute acceptance.
+            {t('section13.paragraph2')}
           </p>
         </section>
 
         {/* Section 14 */}
         <section className="mb-12">
-          <h3 className=" mb-4">14. Governing Law</h3>
+          <h3 className=" mb-4">{t('section14.title')}</h3>
           <p className="text-[#FFFFFFCC] mb-4">
-            These Terms shall be governed by and interpreted in accordance with the laws of the Republic of Estonia and applicable European Union law.
+            {t('section14.paragraph1')}
           </p>
           <p className="text-[#FFFFFFCC]">
-            Consumers residing in other EU countries may also benefit from additional protections under their national consumer laws.
+            {t('section14.paragraph2')}
           </p>
         </section>
 
         {/* Section 15 */}
         <section className="mb-12">
-          <h3 className=" mb-4">15. Contact Us</h3>
-          <p className="text-[#FFFFFFCC] mb-4">Legal address for communication:</p>
+          <h3 className=" mb-4">{t('section15.title')}</h3>
+          <p className="text-[#FFFFFFCC] mb-4">{t('section15.intro')}</p>
           <div className="text-[#FFFFFFCC] space-y-1">
-            <p>NÜVIA OÜ</p>
-            <p>Ahtri tn 12, Tallinn, Estonia, 15551</p>
-            <p>Email: support@nuvia.me</p>
-            <p className="mt-4">© 2025 NÜVIA OÜ. All rights reserved.</p>
+            <p>{t('section15.companyName')}</p>
+            <p>{t('section15.address')}</p>
+            <p>{t('section15.email')}</p>
+            <p className="mt-4">{t('section15.copyright')}</p>
           </div>
         </section>
       </div>

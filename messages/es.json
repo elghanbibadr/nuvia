@@ -160,6 +160,136 @@
       "cookieSettings": "Küpsiste Seaded"
     },
     "copyright": "© 2025 NÜVIA. Revolutsiooniliselt reisimist läbi kunstliku intelligentsi. Kõik õigused kaitstud."
+  },
+   "Terms": {
+    "back": "Tagasi",
+    "title": "Tingimused ja Kasutustingimused NÜVIA OÜ jaoks",
+    "effectiveDate": "Jõustumiskuupäev:",
+    "effectiveDateValue": "22. september 2025",
+    "company": "Ettevõte:",
+    "companyValue": "NÜVIA OÜ (\"NÜVIA\", \"me\", \"meie\", \"meile\")",
+    "registrationNumber": "Registreerimisnumber:",
+    "registrationNumberValue": "17301668",
+    "registeredAddress": "Registreeritud Aadress:",
+    "registeredAddressValue": "Ahtri tn 12, Tallinn, Eesti, 15551",
+    "intro": "See dokument koos meie Privaatsuspoliitika ja Küpsiste Poliitikaga reguleerib kõigi NÜVIA OÜ pakutavate digitaalsete teenuste, platvormide ja reisikorralduste kasutamist kooskõlas EL seaduste ja GDPR nõuetega.",
+    
+    "section1": {
+      "title": "1. Tingimuste Aktsepteerimine",
+      "paragraph1": "Need Tingimused ja Kasutustingimused (\"Tingimused\") reguleerivad teie juurdepääsu ja NÜVIA pakutavate digitaalsete platvormide, rakenduste ja reisteenuste kasutamist. Meie teenuseid kasutades nõustute nende Tingimustega. Kui te ei nõustu, ärge kasutage meie teenuseid.",
+      "paragraph2": "See leping sõlmitakse elektrooniliselt ja muutub õiguslikult siduvaks meie teenuste kasutamisel vastavalt EL määrusele (EL) nr 910/2014 elektroonilise identimise ja usaldusteenuste kohta (eIDAS)."
+    },
+    
+    "section2": {
+      "title": "2. Meie Teenused",
+      "intro": "NÜVIA on Eestis asuv reisitehnoloogia platvorm, mis tegutseb EL tarbijakaitse ja digitaalsete teenuste seaduste alusel. Aitame kasutajatel planeerida, kohandada ja broneerida reisteenuseid. Meie pakkumised hõlmavad:",
+      "item1": "AI-põhist planeerimist ja reisi genereerimist kasutaja eelistuste põhjal.",
+      "item2": "Kolmandate osapoolte pakutavate reisteenuste (lennud, majutus, kindlustus, üleviimised, ekskursioonid) broneerimine.",
+      "item3": "Tsentraliseeritud juurdepääs reisidokumentidele ja marsruudi haldamisele.",
+      "item4": "Teenuste koondamine ja valikuline integreerimine Seotud Reisikorralduste (LTA) süsteemi."
+    },
+    
+    "section3": {
+      "title": "3. Seotud Reisikorraldused (LTA)",
+      "intro": "Vastavalt direktiivile (EL) 2015/2302 võivad mõned meie platvormil tehtud broneeringud olla Seotud Reisikorraldused (LTA), mis ei ole pakettreisid.",
+      "characteristicsTitle": "LTA tunnused:",
+      "characteristic1": "Ostate vähemalt kaks erinevat reisteenust (nt hotell ja lend) sama reisi jaoks.",
+      "characteristic2": "Teenused broneeritakse eraldi lepingute alusel.",
+      "characteristic3": "NÜVIA hõlbustab teise teenuse broneerimist 24 tunni jooksul sihipärase liidese kaudu.",
+      "protectionsTitle": "Tarbijakaitse:",
+      "protection1": "Piiratud maksejõuetusekaitse kehtib otse NÜVIA kaudu broneeritud reisteenustele.",
+      "protection2": "Teid teavitatakse kassas, kas teie kombinatsioon kujutab endast LTA-d.",
+      "protection3": "LTA-d ei paku samu õigusi muudatustele, tagasimaksetele või abile kui pakettreisid."
+    },
+    
+    "section4": {
+      "title": "4. Kasutaja Sobivus",
+      "paragraph1": "Meie teenuste kasutamiseks peate olema vähemalt 18-aastane ja omama õigus- ja teovõimet kohaldatavate riiklike seaduste alusel.",
+      "paragraph2": "EL tarbijaõiguse (direktiiv 2011/83/EU) kohaselt võivad alaealised teenust kasutada ainult vanema või seadusliku eestkostja kontrollitava nõusolekuga."
+    },
+    
+    "section5": {
+      "title": "5. Konto ja Turvalisus",
+      "intro": "Teie vastutate:",
+      "item1": "Täpsete ja täielike registreerimisandmete esitamise eest.",
+      "item2": "Oma volituste turvamise eest.",
+      "item3": "Volitamata juurdepääsust teatamise eest.",
+      "paragraph": "Teie vastutate kõigi oma konto all sooritatud toimingute eest, kui ei tõestata teisiti kohaldatavate turvaõiguste alusel (nt GDPR artikkel 32)."
+    },
+    
+    "section6": {
+      "title": "6. Broneerimine ja Maksmine",
+      "item1": "Hinnad ja saadavus võivad muutuda kuni teie broneeringu kinnitamiseni.",
+      "item2": "Tasud võivad sisaldada kohaldatavat käibemaksu, tollimakse või lisatasusid vastavalt nõukogu direktiivile 2006/112/EÜ.",
+      "item3": "Makseid töödeldakse vastavalt kolmandate osapoolte pakkujate (nt Stripe, Adyen) kaudu ja kaitstakse SSL-krüpteeringuga.",
+      "item4": "LTA puhul kehtib iga reisteenuse kohta selle pakkuja maksetingimused.",
+      "item5": "Valuutavahetustasud võivad kehtida sõltuvalt teie pangast või kaardi väljaandjast."
+    },
+    
+    "section7": {
+      "title": "7. Tühistamised ja Muudatused",
+      "paragraph": "Iga teenusepakkuja määrab oma tühistamis- ja tagasimaksepoliitika. EL õiguse (direktiiv 2011/83/EL) kohaselt ei pruugi teie taganemisõigus kehtida ajakohastele reisteenustele või lendudele ja hotellidele individuaalsete tingimustega. Vaadake üle iga üksiku tingimused enne broneeringu kinnitamist."
+    },
+    
+    "section8": {
+      "title": "8. Reisidokumendid ja Nõuded",
+      "paragraph1": "Teie vastutate ainuisikuliselt selle eest, et vastate kõigi külastatud riikide sise- ja väljumise nõuetele, sealhulgas passid, viisad, vaktsineerimistõendid ja kindlustus.",
+      "paragraph2": "NÜVIA ei vastuta pardaleõnnetamise keeldumise, viisade keeldumise või muude piiri- või lennujaamade halduslike otsuste eest. Võime aidata, pakkudes asjakohast teavet platvormipõhiste teenuste kaudu."
+    },
+    
+    "section9": {
+      "title": "9. Platvormi Kasutamine ja Käitumine",
+      "intro": "Te nõustute mitte:",
+      "item1": "Rikkuma kohaldatavaid EL või riiklikke seadusi.",
+      "item2": "Rikkuma kolmandate osapoolte intellektuaalomandi õigusi.",
+      "item3": "Kasutama botte, kraapijaid või automatiseeritud süsteeme ilma eelneva loata.",
+      "item4": "Üles laadima või edastama pahatahtlikku tarkvara.",
+      "item5": "Üritama häirida teenuse toimimist või infrastruktuuri.",
+      "conclusion": "Rikkumine võib viia konto peatamiseni või teie juurdepääsu püsiva lõpetamiseni."
+    },
+    
+    "section10": {
+      "title": "10. Intellektuaalomand",
+      "paragraph1": "Kõik kaubamärgid, tarkvara, disain ja sisu on NÜVIA OÜ või selle litsentsiandjate intellektuaalomand ja on kaitstud Eesti autoriõiguse seaduse ja EL intellektuaalomandi direktiivide (nt direktiiv 2001/29/EÜ) alusel.",
+      "paragraph2": "Volitamata paljundamine või äriline kasutamine on keelatud."
+    },
+    
+    "section11": {
+      "title": "11. Kolmandate Osapoolte Teenused ja Vastutus",
+      "paragraph1": "NÜVIA hõlbustab juurdepääsu kolmandate osapoolte teenustele, kuid ei tegutse nende teenuste agendi ega põhimõttena, kui ei ole sõnaselgelt öeldud.",
+      "paragraph2": "Vaidlused, tagasimaksed või toimivusega seotud nõuded tuleb esitada asjakohasele teenusepakkujale vastavalt määrusele (EÜ) nr 261/2004 (lendude puhul) või kohaldatavatele riiklikele lepinguõigustele."
+    },
+    
+    "section12": {
+      "title": "12. Vastutuse Piiramine",
+      "intro": "Maksimaalses ulatuses, mida EL ja Eesti õigus lubab, ei vastuta NÜVIA:",
+      "item1": "Kaudsete kasumite, reputatsiooni või järgnevate kahjude eest.",
+      "item2": "Kolmandate osapoolte pakkujate või vääramatu jõu põhjustatud viivituste või tõrgete eest.",
+      "item3": "Andmete kaotamise või juurdepääsu häirete eest, mis on väljaspool meie kontrolli.",
+      "paragraph1": "Meie vastutus meie teenustega seotud nõuete eest on piiratud kogusummaga, mille olete viimase 12 kuu jooksul maksnud.",
+      "paragraph2": "See klausel ei piira vastutust surma või kehavigastuse eest, mis on põhjustatud hooletusest, pettusest või kohustuslike tarbijakaitse rikkumisest."
+    },
+    
+    "section13": {
+      "title": "13. Tingimuste Muudatused",
+      "paragraph1": "Jätame endale õiguse muuta neid Tingimusi vastavalt kohaldatavate õigusaktide või meie teenuste muudatustele. Olulised muudatused edastatakse e-posti või rakendusesisese teatega vähemalt 14 päeva enne jõustumist.",
+      "paragraph2": "Meie teenuste jätkuv kasutamine pärast jõustumiskuupäeva tähendab nõustumist."
+    },
+    
+    "section14": {
+      "title": "14. Kohaldatav Õigus",
+      "paragraph1": "Neid Tingimusi reguleeritakse ja tõlgendatakse vastavalt Eesti Vabariigi seadustele ja kohaldatavatele Euroopa Liidu õigusaktidele.",
+      "paragraph2": "Teistes EL riikides elavad tarbijad võivad samuti kasu saada täiendavatest kaitsemeetmetest oma riiklike tarbijaõiguste alusel."
+    },
+    
+    "section15": {
+      "title": "15. Võtke Meiega Ühendust",
+      "intro": "Õiguslik aadress suhtlemiseks:",
+      "companyName": "NÜVIA OÜ",
+      "address": "Ahtri tn 12, Tallinn, Eesti, 15551",
+      "email": "E-post: support@nuvia.me",
+      "copyright": "© 2025 NÜVIA OÜ. Kõik õigused kaitstud."
+    }
   }
 
 }

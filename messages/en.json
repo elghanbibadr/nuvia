@@ -160,5 +160,135 @@
       "cookieSettings": "Cookie Settings"
     },
     "copyright": "© 2025 NÜVIA. Revolutionizing travel through artificial intelligence. All rights reserved."
+  },
+ "Terms": {
+    "back": "Back",
+    "title": "Terms & Conditions for NÜVIA OÜ",
+    "effectiveDate": "Effective Date:",
+    "effectiveDateValue": "22 September 2025",
+    "company": "Company:",
+    "companyValue": "NÜVIA OÜ (\"NÜVIA\", \"we\", \"us\", \"our\")",
+    "registrationNumber": "Registration Number:",
+    "registrationNumberValue": "17301668",
+    "registeredAddress": "Registered Address:",
+    "registeredAddressValue": "Ahtri tn 12, Tallinn, Estonia, 15551",
+    "intro": "This document, along with our Privacy Policy and Cookie Policy, governs the use of all digital services, platforms, and travel arrangements offered by NÜVIA OÜ, in accordance with EU laws and GDPR compliance.",
+    
+    "section1": {
+      "title": "1. Acceptance of Terms",
+      "paragraph1": "These Terms and Conditions (\"Terms\") govern your access to and use of all digital platforms, applications, and travel services provided by NÜVIA. By accessing or using any of our services, you agree to these Terms. If you do not agree, do not use our services.",
+      "paragraph2": "This contract is concluded electronically and becomes legally binding upon your use of our services, as per EU Regulation (EU) No 910/2014 on electronic identification and trust services (eIDAS)."
+    },
+    
+    "section2": {
+      "title": "2. Our Services",
+      "intro": "NÜVIA is a travel technology platform based in Estonia, operating under EU consumer protection and digital services laws. We assist users in planning, customizing, and booking travel services. Our offerings include:",
+      "item1": "AI-powered planning and trip generation based on user preferences.",
+      "item2": "Booking of travel services (flights, accommodations, insurance, transfers, excursions) provided by third parties.",
+      "item3": "Centralized access to travel documents and itinerary management.",
+      "item4": "Service aggregation and optional integration into Linked Travel Arrangements (LTAs)."
+    },
+    
+    "section3": {
+      "title": "3. Linked Travel Arrangements (LTA)",
+      "intro": "As per Directive (EU) 2015/2302, some bookings made on our platform may constitute Linked Travel Arrangements (LTA), which are not package holidays.",
+      "characteristicsTitle": "Characteristics of an LTA:",
+      "characteristic1": "You purchase at least two different travel services (e.g., hotel and flight) for the same trip.",
+      "characteristic2": "Services are booked under separate contracts.",
+      "characteristic3": "NÜVIA facilitates the booking of the second service within 24 hours via a targeted interface.",
+      "protectionsTitle": "Consumer Protections:",
+      "protection1": "Limited insolvency protection applies to the travel services directly booked through NÜVIA.",
+      "protection2": "You will be informed at checkout whether your combination constitutes an LTA.",
+      "protection3": "LTAs do not offer the same rights to modification, refunds, or assistance as package holidays."
+    },
+    
+    "section4": {
+      "title": "4. User Eligibility",
+      "paragraph1": "You must be at least 18 years old and have legal capacity under applicable national laws to use our services.",
+      "paragraph2": "Under EU consumer law (Directive 2011/83/EU), minors may use the service only with the verifiable consent of a parent or legal guardian."
+    },
+    
+    "section5": {
+      "title": "5. Account and Security",
+      "intro": "You are responsible for:",
+      "item1": "Providing accurate and complete registration data.",
+      "item2": "Securing your credentials.",
+      "item3": "Notifying us of unauthorized access.",
+      "paragraph": "You are liable for all actions conducted under your account unless proven otherwise under applicable security provisions (e.g., GDPR Article 32)."
+    },
+    
+    "section6": {
+      "title": "6. Booking and Payment",
+      "item1": "Prices and availability are subject to change until your booking is confirmed.",
+      "item2": "Charges may include applicable VAT, duties, or surcharges under Council Directive 2006/112/EC.",
+      "item3": "Payments are processed via compliant third-party providers (e.g., Stripe, Adyen) and protected via SSL encryption.",
+      "item4": "In case of LTAs, each travel service is subject to the payment terms of its provider.",
+      "item5": "Currency conversion fees may apply depending on your bank or card issuer."
+    },
+    
+    "section7": {
+      "title": "7. Cancellations and Modifications",
+      "paragraph": "Each service provider defines their own cancellation and refund policy. Under EU law (Directive 2011/83/EU), your right of withdrawal may not apply to time-specific travel services or to flights and hotels with individual terms. Review each individual terms before confirming your booking."
+    },
+    
+    "section8": {
+      "title": "8. Travel Documents and Requirements",
+      "paragraph1": "You are solely responsible for ensuring that you meet entry and exit requirements for all countries you visit, including passports, visas, vaccination proofs, and insurance.",
+      "paragraph2": "NÜVIA is not responsible for denied boarding, visa refusals, or other administrative decisions by border or airline authorities. We may assist by offering relevant information platform-based services."
+    },
+    
+    "section9": {
+      "title": "9. Platform Use and Conduct",
+      "intro": "You agree not to:",
+      "item1": "Violate applicable EU or national laws.",
+      "item2": "Infringe on third-party intellectual property rights.",
+      "item3": "Use bots, scrapers, or automated systems without prior authorization.",
+      "item4": "Upload or transmit malicious software.",
+      "item5": "Attempt to interfere with service operation or infrastructure.",
+      "conclusion": "Violation may lead to account suspension or permanent termination of your access."
+    },
+    
+    "section10": {
+      "title": "10. Intellectual Property",
+      "paragraph1": "All trademarks, software, design, and content are the intellectual property of NÜVIA OÜ or its licensors and are protected under the Estonian Copyright Act and EU Intellectual Property directives (e.g., Directive 2001/29/EC).",
+      "paragraph2": "Unauthorized reproduction or commercial use is prohibited."
+    },
+    
+    "section11": {
+      "title": "11. Third-party Services and Liability",
+      "paragraph1": "NÜVIA facilitates access to third-party services but does not act as an agent or principal in those services, unless expressly stated.",
+      "paragraph2": "Disputes, refunds, or performance claims must be directed to the relevant service provider in line with Regulation (EC) No 261/2004 (for flights) or applicable national contract laws."
+    },
+    
+    "section12": {
+      "title": "12. Limitation of Liability",
+      "intro": "To the maximum extent permitted by EU and Estonian law, NÜVIA shall not be liable for:",
+      "item1": "Indirect profits, reputational or consequential damages.",
+      "item2": "Delays or failures caused by third-party providers or force majeure.",
+      "item3": "Loss of data or access disruptions beyond our control.",
+      "paragraph1": "Our liability for claims related to our services is capped at the total amount paid by you in the past 12 months.",
+      "paragraph2": "This clause does not limit liability for death or personal injury caused by negligence, fraud, or breach of mandatory consumer protections."
+    },
+    
+    "section13": {
+      "title": "13. Changes to the Terms",
+      "paragraph1": "We reserve the right to amend these Terms in line with changes to applicable legislation or our services. Material changes will be communicated via email or in-app notification at least 14 days prior to taking effect.",
+      "paragraph2": "Continued use of our services after the effective date will constitute acceptance."
+    },
+    
+    "section14": {
+      "title": "14. Governing Law",
+      "paragraph1": "These Terms shall be governed by and interpreted in accordance with the laws of the Republic of Estonia and applicable European Union law.",
+      "paragraph2": "Consumers residing in other EU countries may also benefit from additional protections under their national consumer laws."
+    },
+    
+    "section15": {
+      "title": "15. Contact Us",
+      "intro": "Legal address for communication:",
+      "companyName": "NÜVIA OÜ",
+      "address": "Ahtri tn 12, Tallinn, Estonia, 15551",
+      "email": "Email: support@nuvia.me",
+      "copyright": "© 2025 NÜVIA OÜ. All rights reserved."
+    }
   }
 }
