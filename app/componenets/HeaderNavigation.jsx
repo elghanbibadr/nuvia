@@ -1,8 +1,9 @@
 "use client"
 import React, { useState, useCallback } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { useRouter, usePathname } from 'next/navigation';
 
 const NuviaLogo = ({ className = "" }) => (
   <svg 
@@ -21,6 +22,66 @@ const NuviaLogo = ({ className = "" }) => (
     <path d="M0 21.7037V5.255H4.03117L9.85523 13.6674H9.93517V5.255H14.7771V21.7037H10.7916L4.9219 13.1545H4.84197V21.7037H0Z" fill="white"/>
   </svg>
 );
+
+const LanguageSwitcher = ({ className = "" }) => {
+  const locale = useLocale();
+
+  console.log("local",locale)
+  const [isOpen, setIsOpen] = useState(false);
+
+  const languages = [
+    { code: 'en', label: 'English', flag: '🇬🇧' },
+    { code: 'es', label: 'Eesti', flag: '🇪🇪' }
+  ];
+
+  const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
+
+  const switchLanguage = (langCode) => {
+    document.cookie = `NEXT_LOCALE=${langCode}; path=/; max-age=31536000`;
+    window.location.reload();
+    setIsOpen(false);
+  };
+
+  return (
+    <div className={`relative ${className}`}>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center gap-2 text-white hover:text-gray-200 transition-colors text-sm"
+        aria-label="Select language"
+        aria-expanded={isOpen}
+      >
+        <Globe size={18} />
+        <span className="hidden sm:inline">{currentLanguage.code.toUpperCase()}</span>
+      </button>
+
+      {isOpen && (
+        <>
+          {/* Backdrop for mobile */}
+          <div 
+            className="fixed inset-0 z-30"
+            onClick={() => setIsOpen(false)}
+          />
+          
+          {/* Dropdown */}
+          <div className="absolute right-0 mt-2 w-40 bg-[#1a2332] border border-gray-700 rounded-lg shadow-lg overflow-hidden z-40">
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                onClick={() => switchLanguage(lang.code)}
+                className={`w-full px-4 py-3 text-left text-sm hover:bg-[#2a3342] transition-colors flex items-center gap-3 ${
+                  locale === lang.code ? 'bg-[#2a3342] text-white' : 'text-gray-300'
+                }`}
+              >
+                <span className="text-lg">{lang.flag}</span>
+                <span>{lang.label}</span>
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
 
 const JoinButton = ({ className = "" }) => {
   const t = useTranslations('Navigation');
@@ -41,17 +102,14 @@ const NavigationLink = ({ item, onClick, label }) => {
     const targetElement = document.getElementById(targetId);
     
     if (targetElement) {
-      // Smooth scroll to the section
       targetElement.scrollIntoView({ 
         behavior: 'smooth',
         block: 'start'
       });
       
-      // Update URL without page reload
       window.history.pushState(null, '', item.href);
     }
     
-    // Close mobile menu if open
     if (onClick) {
       onClick();
     }
@@ -71,7 +129,6 @@ const HeaderNavigation = () => {
   const t = useTranslations('Navigation');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Navigation items with translation keys
   const NAVIGATION_ITEMS = [
     { key: 'home', href: '', isActive: false },
     { key: 'problemAndSolution', href: '#solution', isActive: false },
@@ -91,7 +148,7 @@ const HeaderNavigation = () => {
   return (
     <>
       {/* Desktop Header */}
-      <header className="hidden md:block w-[65%] max-w-4xl mx-auto">
+      <header className="hidden md:block w-[70%] max-w-4xl mx-auto">
         <div className="bg-[#0E141C80] backdrop-blur-sm rounded-full px-6 py-3">
           <div className="flex items-center justify-between">
             <NuviaLogo className='relative bottom-0.5' />
@@ -106,7 +163,10 @@ const HeaderNavigation = () => {
               ))}
             </nav>
 
-            <JoinButton />
+            <div className="flex items-center gap-4">
+              <LanguageSwitcher />
+              <JoinButton />
+            </div>
           </div>
         </div>
       </header>
@@ -134,17 +194,14 @@ const HeaderNavigation = () => {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <>
-          {/* Backdrop */}
           <div 
             className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
             onClick={closeMobileMenu}
             aria-hidden="true"
           />
           
-          {/* Menu Panel */}
           <div className="fixed inset-0 z-50 md:hidden">
             <div className="bg-[#0E141C] h-full w-full">
-              {/* Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-700">
                 <NuviaLogo />
                 <button
@@ -156,7 +213,6 @@ const HeaderNavigation = () => {
                 </button>
               </div>
 
-              {/* Navigation */}
               <nav className="p-6" role="navigation" aria-label="Mobile navigation">
                 <ul className="space-y-6">
                   {NAVIGATION_ITEMS.map((item) => (
@@ -169,6 +225,11 @@ const HeaderNavigation = () => {
                     </li>
                   ))}
                 </ul>
+                
+                {/* Language Switcher in Mobile Menu */}
+                <div className="mt-8 pt-6 border-t border-gray-700">
+                  <LanguageSwitcher />
+                </div>
               </nav>
             </div>
           </div>

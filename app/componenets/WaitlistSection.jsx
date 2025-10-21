@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 const WaitlistSection = () => {
-  const t = useTranslations('Waitlist');
+  const t = useTranslations('Waitlist2');
   
   const waitlistFeatures = [
     {
