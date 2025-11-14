@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import IternaryCard from './IternaryCard'
 import RecommandationCard from './RecommandationCard'
@@ -12,6 +12,7 @@ const EffortlessTravel = () => {
   const t = useTranslations('AIFeatures');
     const locale = useLocale(); // This gets the current locale (en or et)
 
+  const [mode, setMode] = useState("batch"); // "batch" or "realtime"
 
     console.log("locale",locale)
   
@@ -70,18 +71,39 @@ const EffortlessTravel = () => {
        
         {/* RIGHT COLUMN - 3 cards stacked */}
         <div className='w-full flex flex-col gap-4 flex-shrink-0'>
-          <div className='flex-1'>
-            <Card className="dark-gradient2 h-[100px] flex items-center">
-              <div className='bg-[#162538] w-full flex items-center justify-between rounded-full p-2'>
-                <div className='pl-6'>
-                  <span className='text-white text-sm md:text-lg'>{t('batch')}</span>
-                </div>
-                <div className='green-gradient px-8 shadow-[0_0_10px_2px_rgba(121,202,56,0.3)] py-3 rounded-full'>
-                  <h6 className='text-white text-sm md:text-lg'>{t('realtime')}</h6>
-                </div>
-              </div>
-            </Card>
+         <div className="flex-1">
+      <Card className="dark-gradient2 h-[100px] flex items-center">
+        <div className="bg-[#162538] w-full flex items-center justify-between rounded-full p-2 cursor-pointer">
+          
+          {/* LEFT BUTTON */}
+          <div
+            onClick={() => setMode("batch")}
+            className={`
+              flex-1 text-center py-3 rounded-full transition-all
+              ${mode === "batch" ? "green-gradient shadow-[0_0_10px_2px_rgba(121,202,56,0.3)]" : ""}
+            `}
+          >
+            <span className="text-white text-sm md:text-lg">
+              {t("batch")}
+            </span>
           </div>
+
+          {/* RIGHT BUTTON */}
+          <div
+            onClick={() => setMode("realtime")}
+            className={`
+              flex-1 text-center py-3 rounded-full transition-all
+              ${mode === "realtime" ? "green-gradient shadow-[0_0_10px_2px_rgba(121,202,56,0.3)]" : ""}
+            `}
+          >
+            <span className="text-white text-sm md:text-lg">
+              {t("realtime")}
+            </span>
+          </div>
+
+        </div>
+      </Card>
+    </div>
           
           <div className='flex-1'>
             <DynamicPriceMonitoring className="h-full"/>
