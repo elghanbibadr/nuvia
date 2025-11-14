@@ -20,8 +20,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className=' py-6 px-4 md:px-8'>
-      <div className="max-w-7xl bg-[#18232D] p-6 md:p-8 rounded-3xl mx-auto">
+    <footer className=''>
+      <div className="max-w-7xl bg-[#18232D] py-8 rounded-3xl mx-auto">
         
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 items-center justify-center md:grid-cols-5 gap-12 md:gap-8 mb-12">
